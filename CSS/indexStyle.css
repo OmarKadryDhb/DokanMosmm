@@ -266,6 +266,11 @@ body{
 .register-now button:hover{
     background-color: rgb(255, 132, 0);
 }
+@media (max-width: 750px) {
+    .register-now .register-now-btn{
+        padding-bottom: 30px;
+    }
+}
 /* footer */
 footer{
     min-height: 45vh;
