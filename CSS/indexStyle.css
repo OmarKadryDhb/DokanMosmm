@@ -170,7 +170,7 @@ body{
 }
 @media (max-width: 750px) {
     main h1{
-        padding-top: 150px;
+        margin-top: 50px !important;
     }
 }
 /* Topics */
