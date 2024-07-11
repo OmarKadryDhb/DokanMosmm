@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+/* general */
+:root{
+    --red-color:red;
+    --black-color:#404040;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cairo;
+    scroll-behavior: smooth;
+}
+body{
+    min-height: 100vh;
+}
+.arrow-top{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 999;
+    cursor: pointer;
+    transition: all 0.5s;
+    background-color: #F5F5F5;
+    padding: 10px;
+    border-radius: 50%;
+}
+.arrow-top a{ 
+    text-decoration: none;
+    color: orange;
+}
+/*  */
+.title{
+    color:#404040;
+}
+.navbar{
+    padding: 20px 0px;
+    position: fixed;
+    right: 0px;
+    left: 0px;
+    z-index: 999;
+}
+.navbar-logo .mosmm-img-parent{
+    width: 90px;
+    margin-top: 10px !important;
+}
+.navbar-logo .mosmm-img-parent img{
+    width: 100%;
+}
+.navbar-logo .dokkan-img-parent{
+    width: 70px;
+}
+.navbar-logo .dokkan-img-parent img{
+    width: 100%;
+}
+.navbar-options{
+    font-size: 18px;
+}
+.navbar-options a{
+    transition: all 0.5s;
+}
+.navbar-options a:hover{
+    color: orange;
+}
+.navbar .login-btn{
+    background: orange;
+    font-size: 16px;
+    color: white ;
+    border: none;
+    padding: 3px 25px;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: all 0.4s;
+}
+.navbar .login-btn:hover{
+    background-color: rgb(255, 132, 0);
+}
+.navbar .register-btn{
+    background:F5F5F5;
+    font-size: 16px;
+    color: black ;
+    border: none;
+    padding: 3px 25px;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: all 0.4s;
+}
+.navbar .register-btn:hover{
+    background-color: orange;
+    color: white;
+}
+.navbar .active{
+    color: orange !important;
+}
+.language-icon{
+    color: orange;
+    transition: all 0.5s;
+    padding: 2px;
+    border: 2px solid white;
+    border-radius: 50px;
+}
+.language-icon:hover{
+    border: 2px solid orange;
+    border-radius: 50px;
+}
+
+@media (max-width: 1050px) {
+    .navbar-options{
+        gap:20px;
+        font-size: 17px;
+    }
+    .navbar-right{
+        gap: 30px;
+    }
+    .navbar-right img{
+        width: 22px;
+    }
+    .navbar-right button{
+        padding: 8px 25px;
+    }
+}
+@media (max-width: 900px) {
+    .navbar-options{
+        gap:15px;
+        font-size: 16px;
+    }
+    .navbar-right{
+        gap: 20px;
+    }
+    .navbar-right img{
+        width: 20px;
+    }
+    .navbar-right button{
+        padding: 7px 20px;
+        font-size: 15px;
+    }
+}
+@media (max-width: 750px) {
+    nav .navbar-btns{
+        margin-top: 10px;
+        display: flex;
+        justify-content: start;
+    }
+}
+/* Home */
+.Home{
+    min-height: 50vh;
+    width: 100%;
+}
+.Home .container{
+    padding: 20px;
+}
+.Home h1 {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+.Home h1 span{
+    color: orange;
+}
+.Home p{
+    font-size: 20px;
+}
+.Home .search input{
+    background-color: #F5F5F5;
+}
+.Home .search i{
+    background-color: orange;
+    cursor: pointer;
+}
+@media (max-width: 750px) {
+    main h1{
+        padding-top: 150px;
+    }
+}
+/* Topics */
+.topics{
+    min-height: 150vh;
+}
+.topics .img-parent{
+    width: 450px;
+}
+.topics .img-parent img{
+    width: 100%;
+}
+.topics .topic-content p span{
+    color: orange;
+}
+@media (max-width: 900px) {
+    .topics .img-parent{
+        width: 300px;
+}}
+@media (max-width: 750px) {
+    .topics .topic-2{
+        flex-direction: column-reverse;
+    }
+}
+/* Services */
+.services{
+    padding-top: 30px;
+}
+.services .card-img-parent{
+    width: 150px;
+    margin: auto;
+}
+.services .card-img-parent img{
+    width: 100%;
+}
+.services .inner-price h1{
+    font-size: 56px;
+}
+.services .card{
+    padding: 8px;
+    border-radius: 5px;
+    background-color: white;
+    border: none;
+}
+/* supported sites */
+.supported .right-content .img-parent{
+    width: 50px;
+}
+.supported .right-content .img-parent img{
+    width: 100%;
+}
+.supported .card-support{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.supported .card-support .left-content h6{
+    border-radius: 50px;
+    border: none;
+    padding: 5px 20px;
+    color: white;
+}
+.supported button{
+    background:#F5F5F5;
+    font-size: 16px;
+    color: black ;
+    border: none;
+    padding: 5px 40px;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: all 0.4s;
+}
+.supported button:hover{
+    background-color: orange;
+    color: white;
+}
+/* reg-now */
+.register-now{
+    min-height: 40vh;
+    padding-top: 30px;
+    background-color: #F5F5F5;
+}
+.register-now button{
+    background:orange;
+    font-size: 16px;
+    color: white ;
+    border: none;
+    padding: 5px 40px;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: all 0.4s;
+}
+.register-now button:hover{
+    background-color: rgb(255, 132, 0);
+}
+/* footer */
+footer{
+    min-height: 45vh;
+    background-color: #142D4C;
+}
+footer .row .col-logo{
+    width: 400px;
+}
+footer .row .col-img{
+    width: 300px;
+}
+footer .logo .mosmm-img-parent{
+    width: 75px;
+    margin-top: 10px !important;
+}
+footer .logo .mosmm-img-parent img{
+    width: 100%;
+}
+footer .logo .dokkan-img-parent{
+    width: 70px;
+}
+footer .logo .dokkan-img-parent img{
+    width: 100%;
+}
+footer .card-payment .img-parent img{
+    width: 100%;
+}
+footer .row .col-copyright{
+    width: 400px;
+}
+footer .row .col-img{
+    width: 300px;
+}
+footer .col-social .img-parent{
+    width: 30px;
+    transition: all 0.5s;
+    padding: 1px;
+}
+footer .col-social .img-parent:hover{
+    border: 2px solid orange;
+    border-radius:50% ;
+    
+}
+footer .col-social .img-parent img{
+    width: 100%;
+    cursor: pointer;
+}
+footer .col-copyright .copyright-content span span{
+    color: orange;
+}
+
+@media (max-width: 750px) {
+    footer .row-one{
+        flex-direction: column-reverse;
+    }
+    footer .col-img{
+        margin-top: 30px;
+    }
+    footer .col-social{
+        padding-top:20px;
+        margin: auto;
+        text-align: center;
+    }
+    footer .col-copyright{
+        padding-top:30px ;
+        text-align: center;
+    }
+}
