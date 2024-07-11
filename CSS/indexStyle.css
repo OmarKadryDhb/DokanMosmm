@@ -175,7 +175,7 @@ body{
 }
 /* Topics */
 .topics{
-    min-height: 150vh;
+    min-height: 100vh;
 }
 .topics .img-parent{
     width: 450px;
