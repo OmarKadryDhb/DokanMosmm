@@ -39,13 +39,17 @@
                 <a class="nav-link" href="#questions">Popular Questions</a>
               </li>
               <li class="nav-item">
+                <a class="nav-link" href="#supported">Supported Sites</a>
+              </li>
+              <li class="nav-item">
                 <a class="nav-link" href="#help">Help</a>
               </li>
             </ul>
           </div>
-          <div class="navbar-btns">
+          <div class="navbar-btns d-flex justify-content-center align-items-center">
+            <input id="darkmode" type="checkbox" class="theme-checkbox  me-3">
             <i class="language-icon fa-solid fa-globe me-4"></i>
-            <button class="login-btn">Login</button>
+            <button class="login-btn me-2">Login</button>
             <button class="register-btn">Register</button>
           </div>
         </div>
@@ -104,7 +108,7 @@
       <!-- end section topics -->
 
       <!-- start section Services -->
-      <div class="services pb-5">
+      <div class="services pb-5" id="services">
         <div class="container">
           <div class="title mb-4">
             <h1 class="text-center fw-bold">Services</h1>
@@ -159,7 +163,7 @@
                   <img src="./images/message.png" alt="">
                 </div>
                 <div class="inner-priced-flex flex-column justify-content-center align-items-center">
-                  <h4 class='fw-bold text-center me-2'>Continuous technical support 24 hours</h4>
+                  <h4 class='fw-bold text-center me-2'>24-hour continuous technical support</h4>
                   <p class='p-0 m-0 fw-light text-center'>
                     We are Available to Serve our Customers Anytime, Anywhere, 24 hours a Day, 7 Days a week, 365 days a Year through Multiple communication channels.
                   </p>
@@ -199,7 +203,7 @@
       <!-- end section Services -->
       
       <!-- start section Supported -->
-       <div class="supported pt-5 pb-4">
+       <div class="supported pt-5 pb-4" id="supported">
           <div class="container">
             <div class="title pb-4">
               <h1 class="text-center fw-bold">Supported Sites</h1>
@@ -215,7 +219,7 @@
                     <h4 class="p-2 fw-bold">Shutterstock</h4>
                   </div>
                   <div class="left-content">
-                    <h6  class="bg-success">Abled</h6>
+                    <h6  class="">Abled</h6>
                   </div>
               </div>
               </div>
@@ -229,7 +233,7 @@
                     <h4 class="p-2 fw-bold">Shutterstock</h4>
                   </div>
                   <div class="left-content">
-                    <h6  class="bg-success">Abled</h6>
+                    <h6  class="">Abled</h6>
                   </div>
               </div>
               </div>
@@ -243,7 +247,7 @@
                     <h4 class="p-2 fw-bold">Adobestock</h4>
                   </div>
                   <div class="left-content">
-                    <h6  class="bg-success">Abled</h6>
+                    <h6  class="">Abled</h6>
                   </div>
               </div>
               </div>
@@ -257,7 +261,7 @@
                     <h4 class="p-2 fw-bold">Alamy</h4>
                   </div>
                   <div class="left-content">
-                    <h6  class="bg-success">Abled</h6>
+                    <h6  class="">Abled</h6>
                   </div>
               </div>
               </div>
@@ -271,7 +275,7 @@
                     <h4 class="p-2 fw-bold">Envato</h4>
                   </div>
                   <div class="left-content">
-                    <h6  class="bg-danger">Disabled</h6>
+                    <h6  class="disabled">Disabled</h6>
                   </div>
               </div>
               </div>
@@ -285,14 +289,14 @@
                     <h4 class="p-2 fw-bold">Dreamstime</h4>
                   </div>
                   <div class="left-content">
-                    <h6  class="bg-danger">Disabled</h6>
+                    <h6  class="disabled">Disabled</h6>
                   </div>
               </div>
               </div>
             </div>
             <div class="supported-btn d-flex justify-content-center align-items-center mt-3">
               <button class="">
-                See more
+                See more <i class="ms-3 fa-solid fa-angle-down"></i>
               </button>
             </div>
           </div>
@@ -300,7 +304,7 @@
       <!-- end section Supported -->
       
       <!-- start section register now -->
-       <div class="register-now d-flex justify-content-center align-items-center">
+       <div class="register-now d-flex justify-content-center align-items-center" id="reg-now">
           <div class="container">
             <div class="title text-center mb-4">
               <h2 class="fw-bold">
@@ -389,5 +393,6 @@
       <!-- end section footer -->
       
          <script src="js/bootstrap.bundle.min.js"></script>
+         <script src="js/index.js"></script>
     </body>
 </html>

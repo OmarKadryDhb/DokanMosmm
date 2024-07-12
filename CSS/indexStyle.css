@@ -103,7 +103,70 @@ body{
     border: 2px solid orange;
     border-radius: 50px;
 }
-
+/* theme box */
+.theme-checkbox {
+    --toggle-size: 16px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 5em;
+    height: 2em;
+    background: -webkit-gradient(linear, left top, right top, color-stop(50%, #efefef), color-stop(50%, #2a2a2a)) no-repeat;
+    background: -o-linear-gradient(left, #efefef 50%, #2a2a2a 50%) no-repeat;
+    background: linear-gradient(to right, #2a2a2a 50%, orange 50%) no-repeat;
+    background-size: 205%;
+    background-position: 0;
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+    border-radius: 99em;
+    position: relative;
+    cursor: pointer;
+    font-size: var(--toggle-size);
+  }
+  
+  .theme-checkbox::before {
+    content: "";
+    width: 1em;
+    height: 1em;
+    position: absolute;
+    top: 0.438em;
+    left: 0.438em;
+    background: -webkit-gradient(linear, left top, right top, color-stop(50%, #efefef), color-stop(50%, #2a2a2a)) no-repeat;
+    background: -o-linear-gradient(left, #efefef 50%, #2a2a2a 50%) no-repeat;
+    background: linear-gradient(to right, #efefef 50%, orange 50%) no-repeat;
+    background-size: 205%;
+    background-position: 100%;
+    border-radius: 50%;
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+}
+  
+.theme-checkbox:checked::before {
+    left: calc(100% - 1em - 0.438em);
+    background-position: 0;
+}
+  
+.theme-checkbox:checked {
+    background-position: 100%;
+}
+body.night{
+    background-color: #0c1d32;
+    color: #efefef;
+}
+#navbar.night{
+    background-color:  #0c1d32 !important;
+}
+#navbarSupportedContent.night a{
+    color: white !important;
+}
+#navbarSupportedContent.night .active{
+    color: orange !important;
+}
+#navbarSupportedContent.night a:hover{
+    color: orange !important;
+}
 @media (max-width: 1050px) {
     .navbar-options{
         gap:20px;
@@ -168,6 +231,19 @@ body{
     background-color: orange;
     cursor: pointer;
 }
+/* darkmode */
+#home.night h1{
+    color: #efefef !important;
+}
+#home.night .search{
+    background-color: #142D4C !important;
+}
+#home.night input{
+    background-color: #0c1d32 !important;
+}
+#home.night input::placeholder{
+    color: #efefef !important;
+}
 @media (max-width: 750px) {
     main h1{
         margin-top: 50px !important;
@@ -215,6 +291,14 @@ body{
     background-color: white;
     border: none;
 }
+    /* night */
+#services.night .title{
+    color: #efefef !important;
+}
+#services.night .card{
+    background-color: #0c1d32 !important;
+    color: #efefef !important;
+}    
 /* supported sites */
 .supported .right-content .img-parent{
     width: 50px;
@@ -232,6 +316,10 @@ body{
     border: none;
     padding: 5px 20px;
     color: white;
+    background-color: #31C48D;
+}
+.supported .card-support .left-content .disabled{
+    background-color: #F05252;
 }
 .supported button{
     background:#F5F5F5;
@@ -246,6 +334,11 @@ body{
 .supported button:hover{
     background-color: orange;
     color: white;
+}
+
+/* night */
+#supported.night h1{
+    color: #efefef !important;
 }
 /* reg-now */
 .register-now{
@@ -265,6 +358,14 @@ body{
 }
 .register-now button:hover{
     background-color: rgb(255, 132, 0);
+}
+/* night */
+#reg-now.night {
+    background-color: #142D4C !important;
+    border-bottom: 1px solid rgb(54, 64, 74);
+}
+#reg-now.night h2{
+    color: #efefef !important;
 }
 @media (max-width: 750px) {
     .register-now .register-now-btn{
