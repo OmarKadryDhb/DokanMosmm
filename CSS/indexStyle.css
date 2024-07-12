@@ -109,8 +109,8 @@ body{
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    width: 5em;
-    height: 2em;
+    width: 3.5em;
+    height: 1.7em;
     background: -webkit-gradient(linear, left top, right top, color-stop(50%, #efefef), color-stop(50%, #2a2a2a)) no-repeat;
     background: -o-linear-gradient(left, #efefef 50%, #2a2a2a 50%) no-repeat;
     background: linear-gradient(to right, #2a2a2a 50%, orange 50%) no-repeat;
@@ -127,8 +127,8 @@ body{
   
   .theme-checkbox::before {
     content: "";
-    width: 1em;
-    height: 1em;
+    width: 0.9em;
+    height: 0.9em;
     position: absolute;
     top: 0.438em;
     left: 0.438em;
@@ -207,7 +207,7 @@ body.night{
 }
 /* Home */
 .Home{
-    min-height: 50vh;
+    min-height: 110vh;
     width: 100%;
 }
 .Home .container{
@@ -219,7 +219,7 @@ body.night{
     margin-bottom: 25px;
 }
 .Home h1 span{
-    color: orange;
+    color: orange !important;
 }
 .Home p{
     font-size: 20px;
@@ -231,6 +231,8 @@ body.night{
     background-color: orange;
     cursor: pointer;
 }
+
+
 /* darkmode */
 #home.night h1{
     color: #efefef !important;
@@ -261,6 +263,9 @@ body.night{
 }
 .topics .topic-content p span{
     color: orange;
+}
+.topics .topic-right h3{
+    text-align: end;
 }
 @media (max-width: 900px) {
     .topics .img-parent{
@@ -300,44 +305,78 @@ body.night{
     color: #efefef !important;
 }    
 /* supported sites */
-.supported .right-content .img-parent{
-    width: 50px;
+.supported .title h1{
+    color: #404040;
 }
-.supported .right-content .img-parent img{
-    width: 100%;
+.supported .content-header {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color:white !important;
 }
-.supported .card-support{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.supported .card-support .left-content h6{
-    border-radius: 50px;
-    border: none;
-    padding: 5px 20px;
-    color: white;
-    background-color: #31C48D;
-}
-.supported .card-support .left-content .disabled{
-    background-color: #F05252;
-}
-.supported button{
-    background:#F5F5F5;
-    font-size: 16px;
-    color: black ;
-    border: none;
-    padding: 5px 40px;
+.supported .content-header .contents {
     cursor: pointer;
-    border-radius: 6px;
-    transition: all 0.4s;
 }
-.supported button:hover{
-    background-color: orange;
+.supported .content-header .contents i{
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.supported .content-header .contents:hover i {
+    transform: scale(1.2);
+}
+.supported .content-header .contents i{
+    color: red;
+}
+.supported .content-header .left{
+    border-bottom: solid 5px red;
+}
+.supported .content-price{
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.supported .card .img-parent{
+    width: 140px;
+}
+.supported .card img{
+    width: 100%;
+    border-radius: 5px;
+}
+.supported .card .abled{
+    border: none;
+    background-color: #31C48D;
+    padding:0px 20px;
+    font-size: 17px;
+    margin-top: 10px;
+    color: white;
+}
+.supported .card .disabled{
+    border: none;
+    background-color: #F05252;
+    padding:0px 20px;
+    font-size: 17px;
+    margin-top: 10px;
     color: white;
 }
 
+
 /* night */
 #supported.night h1{
+    color: #efefef !important;
+}
+#supported.night .parent-con {
+    color: #efefef !important;
+}
+#supported.night  .ineer-container{
+    background-color: #142D4C !important;
+}
+#supported.night button{
+    background-color: orange !important;
+    color: white;
+}
+#supported.night .content-price{
+    background-color: #142D4C !important;
+}
+#supported.night .card{
+    background-color: #0c1d32 !important;
     color: #efefef !important;
 }
 /* reg-now */
@@ -361,8 +400,7 @@ body.night{
 }
 /* night */
 #reg-now.night {
-    background-color: #142D4C !important;
-    border-bottom: 1px solid rgb(54, 64, 74);
+    background-color: #173659 !important;
 }
 #reg-now.night h2{
     color: #efefef !important;
@@ -422,7 +460,14 @@ footer .col-social .img-parent img{
 footer .col-copyright .copyright-content span span{
     color: orange;
 }
-
+footer .copyright-span{
+    color: #efefef !important;
+}
+/* night */
+#footer.night{
+    background-color: #0c1d32 !important;
+    color: #efefef !important;
+}
 @media (max-width: 750px) {
     footer .row-one{
         flex-direction: column-reverse;

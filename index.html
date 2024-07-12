@@ -3,7 +3,7 @@
       <script src="https://kit.fontawesome.com/22b1f7ecb4.js" crossorigin="anonymous"></script>
       <link rel="stylesheet" href="CSS/bootstrap.min.css">
       <link rel="stylesheet" href="CSS/indexStyle.css">
-      <title>DokkanMosmm - دكان مصمم</title>
+      <title>DokanMosmm - دكان مصمم</title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body data-bs-spy="scroll" data-bs-target="#navbar-example">
@@ -30,40 +30,46 @@
           <div class="collapse navbar-collapse navbar-options" id="navbarSupportedContent">
             <ul class="navbar-nav navbar-options-a m-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                <a class="nav-link active" data-i18n='home' aria-current="page" href="#home">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#prices">Prices</a>
+                <a class="nav-link" href="#prices" data-i18n='prices'>Prices</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#questions">Popular Questions</a>
+                <a class="nav-link" href="#questions" data-i18n='questions'>Popular Questions</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#supported">Supported Sites</a>
+                <a class="nav-link" href="#supported" data-i18n='supported'>Supported Sites</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#help">Help</a>
+                <a class="nav-link" href="#help" data-i18n='help'>Help</a>
               </li>
             </ul>
           </div>
           <div class="navbar-btns d-flex justify-content-center align-items-center">
             <input id="darkmode" type="checkbox" class="theme-checkbox  me-3">
-            <i class="language-icon fa-solid fa-globe me-4"></i>
-            <button class="login-btn me-2">Login</button>
-            <button class="register-btn">Register</button>
+            <div class="lang-parent bg-black me-2 pe-2 ps-2 rounded-2">
+              <i class="language-icon fa-solid fa-globe"></i>
+              <select class=" border-0 bg-black text-white pe-2 ps-2" name="" id='language-selector'>
+                <option value='en' data-i18n='english' >English</option>
+                <option value='ar' data-i18n='arabic'>Arabic</option>
+              </select>
+            </div>
+            <button class="login-btn me-2" data-i18n='login'>Login</button>
+            <button class="register-btn" data-i18n='register'>Register</button>
           </div>
         </div>
       </nav>
       <!-- end section nav -->
 
       <!-- start section home -->
-      <main class="Home d-flex justify-content-center align-items-center" id="home">
+      <main class="Home d-flex justify-content-center align-items-start" id="home">
         <div class="container pt-5">
-            <h1 class='text-black fw-bold pt-5 mt-5'>Everything an <span>Arab Designer</span> Needs in one Palce!</h1>
-            <p class="text-center fw-light">Please choose a link from your favorite site and put the link here...</p>
+              <h1 class='text-black fw-bold pt-5 mt-5' data-i18n='homeh1'>Everything an Arab Designer Needs in one Palce.</h1>
+            <p class="text-center fw-light" data-i18n='homep'>Please choose a link from your favorite site and put the link here...</p>
             <div class="search d-flex align-items-center p-3 rounded-3 bg-white">
-                <input type="text" class='form-control p-3 w-100 border-0' placeholder='Put File Link Here' />
-                <i class="fa-solid fa-xmark fs-3 ms-2 p-2 text-white rounded-1"></i>
+                <input id="search" type="text" class='form-control p-3 w-100 border-0' data-i18n='homeinput' placeholder='Put File Link Here' />
+                <i class="fa-solid fa-xmark fs-2 ms-2 p-2 text-white rounded-1"></i>
                 <i class="fa-solid fa-magnifying-glass ms-3 fs-3 p-2 text-white rounded-1"></i>
             </div>
         </div>
@@ -71,7 +77,7 @@
       <!-- end section home -->
       
       <!-- start section topics -->
-       <div class="topics pt-5">
+       <div class="topics pt-5" dir="ltr">
         <div class="container">
           <div class="row mb-3 d-flex justify-content-center align-items-center">
             <div class="col-md-6 d-flex justify-content-center align-items-center">
@@ -83,16 +89,16 @@
             </div>
             <div class="col-md-6 mb-auto">
               <div class="topic-right topic-content p-3">
-                <h3 class="fw-bold">Everything You Need to Create Amazing Designs.</h3>
-                <p><span class="fw-bold">DokkanMosmm</span>: It supports more than one international website, which will greatly facilitate the design process for you.We guarantee you the highest quality and best prices.</p>
+                <h3 class="fw-bold" data-i18n="topicr_h3" dir="ltr">Everything You Need to Create Amazing Designs.</h3>
+                <p data-i18n="topic_p">DokkanMosmm: It supports more than one international website, which will greatly facilitate the design process for you.We guarantee you the highest quality and best prices.</p>
               </div>
             </div>
           </div>
           <div class="row topic-2 d-flex justify-content-center align-items-center">
             <div class="col-md-6 mb-auto">
               <div class="topic-left topic-content p-3">
-                <h3 class="fw-bold">Ease of use</h3>
-                <p><span class="fw-bold">DokkanMosmm</span>: It supports more than one international website, which will greatly facilitate the design process for you.We guarantee you the highest quality and best prices.</p>
+                <h3 class="fw-bold" data-i18n="topicl_h3">Ease of use</h3>
+                <p data-i18n="topic_p">DokkanMosmm: It supports more than one international website, which will greatly facilitate the design process for you.We guarantee you the highest quality and best prices.</p>
               </div>
             </div>
             <div class="col-md-6 d-flex justify-content-center align-items-center">
@@ -108,10 +114,10 @@
       <!-- end section topics -->
 
       <!-- start section Services -->
-      <div class="services pb-5" id="services">
+      <div class="services pb-5" id="services" dir="ltr">
         <div class="container">
           <div class="title mb-4">
-            <h1 class="text-center fw-bold">Services</h1>
+            <h1 class="text-center fw-bold" data-i18n="services">Services</h1>
           </div>
           <div class="row gy-3">
             <!-- 1 -->
@@ -121,8 +127,8 @@
                   <img src="./images/message.png" alt="">
                 </div>
                 <div class="inner-priced-flex flex-column justify-content-center align-items-center">
-                  <h4 class='fw-bold text-center me-2'>Unbeatable price</h4>
-                  <p class='p-0 m-0 fw-light text-center'>
+                  <h4 class='fw-bold text-center me-2' data-i18n="unbeatablePrice">Unbeatable price</h4>
+                  <p class='p-0 m-0 fw-light text-center' data-i18n="unbeatablePrice_p">
                     We are available to serve our customers anytime, anywhere, 24 hours a day, 7 days a week, 365 days a year through multiple communication channels.
                   </p>
                 </div>
@@ -135,7 +141,7 @@
                   <img src="./images/mouse.png" alt="">
                 </div>
                 <div class="inner-priced-flex flex-column justify-content-center align-items-center">
-                  <h4 class='fw-bold text-center me-2'>Keep your Files Forever</h4>
+                  <h4 class='fw-bold text-center me-2' data-i18n="keep">Keep your Files Forever</h4>
                   <p class='p-0 m-0 fw-light text-center'>
                     You Can Keep your Downloads in Your Account on The Site Forever.
                   </p>
@@ -149,8 +155,8 @@
                   <img src="./images/file.png" alt="">
                 </div>
                 <div class="inner-priced-flex flex-column justify-content-center align-items-center">
-                  <h4 class='fw-bold text-center me-2'>Download10 Files With oneClick</h4>
-                  <p class='p-0 m-0 fw-light text-center'>
+                  <h4 class='fw-bold text-center me-2' data-i18n="downloadFiles">Download10 Files With oneClick</h4>
+                  <p class='p-0 m-0 fw-light text-center'  data-i18n="downloadFiles_p">
                   If you Want to Download Multiple Files at once, This is not a Problem anymore, Save Time and Get the Fastest and Cheapest Price Ever!
                 </p>
                 </div>
@@ -163,8 +169,8 @@
                   <img src="./images/message.png" alt="">
                 </div>
                 <div class="inner-priced-flex flex-column justify-content-center align-items-center">
-                  <h4 class='fw-bold text-center me-2'>24-hour continuous technical support</h4>
-                  <p class='p-0 m-0 fw-light text-center'>
+                  <h4 class='fw-bold text-center me-2' data-i18n="support">24-hour continuous technical support</h4>
+                  <p class='p-0 m-0 fw-light text-center' data-i18n="support_p">
                     We are Available to Serve our Customers Anytime, Anywhere, 24 hours a Day, 7 Days a week, 365 days a Year through Multiple communication channels.
                   </p>
                 </div>
@@ -177,8 +183,8 @@
                   <img src="./images/mouse.png" alt="">
                 </div>
                 <div class="inner-priced-flex flex-column justify-content-center align-items-center">
-                  <h4 class='fw-bold text-center me-2'> Download the original files with the click of a button</h4>
-                  <p class='p-0 m-0 fw-light text-center'>
+                  <h4 class='fw-bold text-center me-2' data-i18n="dOriginal"> Download the original files with the click of a button</h4>
+                  <p class='p-0 m-0 fw-light text-center' data-i18n="dOriginal_p">
                   You can download original files from more than one site and all of this with just the click of a button
                   </p>
                 </div>
@@ -191,7 +197,7 @@
                   <img src="./images/mouse.png" alt="">
                 </div>
                 <div class="inner-priced-flex flex-column justify-content-center align-items-center">
-                  <h4 class='fw-bold text-center me-2'> Download more than one file at the same time</h4>
+                  <h4 class='fw-bold text-center me-2' data-i18n="dMore"> Download more than one file at the same time</h4>
                   <p class='p-0 m-0 fw-light text-center'>
                     If you want to download multiple files at once, this is not a problem anymore, save time and get the fastest and cheapest price ever!</p>
                 </div>
@@ -203,101 +209,116 @@
       <!-- end section Services -->
       
       <!-- start section Supported -->
-       <div class="supported pt-5 pb-4" id="supported">
-          <div class="container">
+       <div class="supported pt-5 pb-4 mb-5" id="supported" dir="ltr">
+          <div class="container parent-con">
             <div class="title pb-4">
               <h1 class="text-center fw-bold">Supported Sites</h1>
             </div>
-            <div class="row gy-5 pt-4">
-              <!-- 1 -->
-              <div class="col-lg-4 col-md-6">
-                <div class="card-support">
-                  <div class="right-content d-flex justify-content-center align-items-center">
-                    <div class="img-parent">
-                      <img src="./images/Shutterstock.webp" alt="">
+            <div class="content-price shadow-lg bg-white pt-3 pb-3">
+              <div class="container ineer-container">
+              <div class="row gy-3">
+                <!-- 1 -->
+                <div class="col-md-3">
+                  <div class="card p-3 d-flex align-items-center">
+                    <div class="img-parent pb-3">
+                      <img src="./images/Shutterstock.webp" alt="" />
                     </div>
-                    <h4 class="p-2 fw-bold">Shutterstock</h4>
+                    <span class='fw-bold'>Shutterstock</span>
+                    <span class='fw-light abled rounded-pill' data-i18n="able">Abled</span>
                   </div>
-                  <div class="left-content">
-                    <h6  class="">Abled</h6>
-                  </div>
-              </div>
-              </div>
-              <!-- 2 -->
-              <div class="col-lg-4 col-md-6">
-                <div class="card-support">
-                  <div class="right-content d-flex justify-content-center align-items-center">
-                    <div class="img-parent">
-                      <img src="./images/Shutterstock.webp" alt="">
+                </div>
+                <!-- 2 -->
+                <div class="col-md-3">
+                  <div class="card p-3 d-flex align-items-center">
+                    <div class="img-parent pb-3">
+                      <img src="./images/Designi.webp" alt="" />
                     </div>
-                    <h4 class="p-2 fw-bold">Shutterstock</h4>
+                    <span class='fw-bold'>Designi</span>
+                    <span class='fw-light abled rounded-pill' data-i18n="able">Abled</span>
                   </div>
-                  <div class="left-content">
-                    <h6  class="">Abled</h6>
-                  </div>
-              </div>
-              </div>
-              <!-- 3 -->
-              <div class="col-lg-4 col-md-6">
-                <div class="card-support">
-                  <div class="right-content d-flex justify-content-center align-items-center">
-                    <div class="img-parent">
-                      <img src="./images/Adobestock.webp" alt="">
+                </div>
+                <!-- 3 -->
+                <div class="col-md-3">
+                  <div class="card p-3 d-flex align-items-center">
+                    <div class="img-parent pb-3">
+                      <img src="./images/Creativefabrica.webp" alt="" />
                     </div>
-                    <h4 class="p-2 fw-bold">Adobestock</h4>
+                    <span class='fw-bold'>Creativefabrica</span>
+                    <span class='fw-light disabled rounded-pill' data-i18n="disable">Disabled</span>
                   </div>
-                  <div class="left-content">
-                    <h6  class="">Abled</h6>
-                  </div>
-              </div>
-              </div>
-              <!-- 4 -->
-              <div class="col-lg-4 col-md-6">
-                <div class="card-support">
-                  <div class="right-content d-flex justify-content-center align-items-center">
-                    <div class="img-parent">
-                      <img src="./images/Alamy.webp" alt="">
+                </div>
+                <!-- 4 -->
+                <div class="col-md-3">
+                  <div class="card p-3 d-flex align-items-center">
+                    <div class="img-parent pb-3">
+                      <img src="./images/Alamy.webp" alt="" />
                     </div>
-                    <h4 class="p-2 fw-bold">Alamy</h4>
+                    <span class='fw-bold'>Alamy</span>
+                    <span class='fw-light disabled rounded-pill' data-i18n="disable">Disabled</span>
                   </div>
-                  <div class="left-content">
-                    <h6  class="">Abled</h6>
-                  </div>
-              </div>
-              </div>
-              <!-- 5 -->
-              <div class="col-lg-4 col-md-6">
-                <div class="card-support">
-                  <div class="right-content d-flex justify-content-center align-items-center">
-                    <div class="img-parent">
-                      <img src="./images/Envato.webp" alt="">
+                </div>
+                <!-- 5 -->
+                <div class="col-md-3">
+                  <div class="card p-3 d-flex align-items-center">
+                    <div class="img-parent pb-3">
+                      <img src="./images/Adobestock.webp" alt="" />
                     </div>
-                    <h4 class="p-2 fw-bold">Envato</h4>
+                    <span class='fw-bold'>Adobestock</span>
+                    <span class='fw-light abled rounded-pill' data-i18n="able">abled</span>
                   </div>
-                  <div class="left-content">
-                    <h6  class="disabled">Disabled</h6>
-                  </div>
-              </div>
-              </div>
-              <!-- 6 -->
-              <div class="col-lg-4 col-md-6">
-                <div class="card-support">
-                  <div class="right-content d-flex justify-content-center align-items-center">
-                    <div class="img-parent">
-                      <img src="./images/Dreamstime.webp" alt="">
+                </div>
+                <!-- 6 -->
+                <div class="col-md-3">
+                  <div class="card p-3 d-flex align-items-center">
+                    <div class="img-parent pb-3">
+                      <img src="./images/Envato.webp" alt="" />
                     </div>
-                    <h4 class="p-2 fw-bold">Dreamstime</h4>
+                    <span class='fw-bold'>Envato</span>
+                    <span class='fw-light abled rounded-pill' data-i18n="able">abled</span>
                   </div>
-                  <div class="left-content">
-                    <h6  class="disabled">Disabled</h6>
+                </div>
+                <!-- 7 -->
+                <div class="col-md-3">
+                  <div class="card p-3 d-flex align-items-center">
+                    <div class="img-parent pb-3">
+                      <img src="./images/Flaticon.webp" alt="" />
+                    </div>
+                    <span class='fw-bold'>Flaticon</span>
+                    <span class='fw-light abled rounded-pill' data-i18n="able">abled</span>
                   </div>
+                </div>
+                 <!-- 8 -->
+                 <div class="col-md-3">
+                  <div class="card p-3 d-flex align-items-center">
+                    <div class="img-parent pb-3">
+                      <img src="./images/ArtlistFootage.webp" alt="" />
+                    </div>
+                    <span class='fw-bold'>ArtlistFootage</span>
+                    <span class='fw-light disabled rounded-pill' data-i18n="disable">Disabled</span>
+                  </div>
+                </div>
+                 <!-- 9 -->
+                 <div class="col-md-3">
+                  <div class="card p-3 d-flex align-items-center">
+                    <div class="img-parent pb-3">
+                      <img src="./images/Vectorstock.webp" alt="" />
+                    </div>
+                    <span class='fw-bold'>Vectorstock</span>
+                    <span class='fw-light disabled rounded-pill' data-i18n="disable">Disabled</span>
+                  </div>
+                </div>
+                 <!-- 10 -->
+                 <div class="col-md-3">
+                  <div class="card p-3 d-flex align-items-center">
+                    <div class="img-parent pb-3">
+                      <img src="./images/Ui8.webp" alt="" />
+                    </div>
+                    <span class='fw-bold'>Ui8</span>
+                    <span class='fw-light abled rounded-pill' data-i18n="able">abled</span>
+                  </div>
+                </div>
+                </div>
               </div>
-              </div>
-            </div>
-            <div class="supported-btn d-flex justify-content-center align-items-center mt-3">
-              <button class="">
-                See more <i class="ms-3 fa-solid fa-angle-down"></i>
-              </button>
             </div>
           </div>
        </div>
@@ -307,11 +328,11 @@
        <div class="register-now d-flex justify-content-center align-items-center" id="reg-now">
           <div class="container">
             <div class="title text-center mb-4">
-              <h2 class="fw-bold">
+              <h2 class="fw-bold" data-i18n="registerNow">
                 Register Now!
               </h2>
             </div>
-            <div class="register-now-content">
+            <div class="register-now-content mb-4" data-i18n="registerNow_p">
               <p>
                 Get the highest quality images at the best prices.
                 Get the opportunity to download high-quality, royalty-free images, vectors and illustrations from any site we support for almost any application.
@@ -319,7 +340,7 @@
               </p>              
             </div>
             <div class="register-now-btn d-flex justify-content-center ">
-              <button class="register-btn">
+              <button class="register-btn" data-i18n="registerNow_btn">
                 Create Account
               </button>
             </div>
@@ -328,7 +349,7 @@
       <!-- end section register now -->
       
       <!-- start section footer -->
-       <footer  class="footer pt-4 pb-3">
+       <footer  class="footer pt-4 pb-3" id="footer" dir="ltr">
         <div class="container">
           <div class="row row-one mb-5 d-flex justify-content-between align-items-center">
             <div class="col-md-2 col-sm-12 col-img">
@@ -349,7 +370,7 @@
                     </div>
                 </div>
                 <div class="card-inner-content">
-                  <p class="text-white">
+                  <p class="text-white" data-i18n="footer_p">
                     We offer you a very special service through which you can download all 
                     the programs you need and copy Windows, courses, and games completely free of charge.
                      We also now seek to provide a service for watching cartoons and documentaries directly and without downloading.
@@ -382,8 +403,8 @@
             </div>
             <div class="col-md-2 col-sm-12 col-copyright mb-auto">
               <div class="copyright">
-                <div class="copyright-content">
-                  <span class="text-white">All rights reserved @2024 <span class="">DokkanMosmm</span></span>
+                <div class="copyright-content" data-i18n="footer_copyright">
+                  <span class="copyright-span text-white">All rights reserved @2024 DokanMosmm</span>
                 </div>
               </div>
             </div>
@@ -393,6 +414,6 @@
       <!-- end section footer -->
       
          <script src="js/bootstrap.bundle.min.js"></script>
-         <script src="js/index.js"></script>
+         <script src="js/index.js" type="module"></script>
     </body>
 </html>
