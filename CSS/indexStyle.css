@@ -40,6 +40,9 @@ body{
     left: 0px;
     z-index: 999;
 }
+.navbar-logo{
+    cursor: pointer;
+}
 .navbar-logo .mosmm-img-parent{
     width: 90px;
     margin-top: 10px !important;
@@ -67,7 +70,7 @@ body{
     font-size: 16px;
     color: white ;
     border: none;
-    padding: 3px 25px;
+    padding: 3px 20px;
     cursor: pointer;
     border-radius: 6px;
     transition: all 0.4s;
@@ -80,7 +83,7 @@ body{
     font-size: 16px;
     color: black ;
     border: none;
-    padding: 3px 25px;
+    padding: 3px 20px;
     cursor: pointer;
     border-radius: 6px;
     transition: all 0.4s;
@@ -95,13 +98,10 @@ body{
 .language-icon{
     color: orange;
     transition: all 0.5s;
-    padding: 2px;
-    border: 2px solid white;
     border-radius: 50px;
 }
-.language-icon:hover{
-    border: 2px solid orange;
-    border-radius: 50px;
+.navbar .navbar-btns select{
+    cursor: pointer;
 }
 /* theme box */
 .theme-checkbox {
@@ -167,20 +167,8 @@ body.night{
 #navbarSupportedContent.night a:hover{
     color: orange !important;
 }
-@media (max-width: 1050px) {
-    .navbar-options{
-        gap:20px;
-        font-size: 17px;
-    }
-    .navbar-right{
-        gap: 30px;
-    }
-    .navbar-right img{
-        width: 22px;
-    }
-    .navbar-right button{
-        padding: 8px 25px;
-    }
+#language-selector:focus-visible{
+    outline: none;
 }
 @media (max-width: 900px) {
     .navbar-options{
@@ -207,7 +195,7 @@ body.night{
 }
 /* Home */
 .Home{
-    min-height: 110vh;
+    min-height: 100vh;
     width: 100%;
 }
 .Home .container{
@@ -224,8 +212,11 @@ body.night{
 .Home p{
     font-size: 20px;
 }
-.Home .search input{
+.Home .search {
     background-color: #F5F5F5;
+}
+.Home .search input{
+    background-color: white;
 }
 .Home .search i{
     background-color: orange;
@@ -333,8 +324,12 @@ body.night{
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
 }
+.supported .content-price{
+    border: 2px solid orange;
+    border-radius: 5px;
+}
 .supported .card .img-parent{
-    width: 140px;
+    width: 80px;
 }
 .supported .card img{
     width: 100%;
@@ -378,6 +373,14 @@ body.night{
 #supported.night .card{
     background-color: #0c1d32 !important;
     color: #efefef !important;
+}
+@media (max-width: 750px) {
+    .supported .content-price .row{
+        display: flex;
+    }
+    .supported .content-price .col-md-3{
+        width: 50% !important;
+    }
 }
 /* reg-now */
 .register-now{
