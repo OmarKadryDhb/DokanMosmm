@@ -1,5 +1,14 @@
 import  translations  from "./translations.js";
 
+$(function () {
+    // function startloading(){
+    //     $(".sk-chase").fadeOut(3000,function(){ 
+    //         $("#loading").fadeOut(1000,function(){
+    //             $("body").css("overflow",'auto');
+    //             $("#loading").remove();
+    //         });})
+    // }
+    // startloading();
 var content = document.getElementsByTagName("body")[0];
 var navbar = document.getElementById("navbar");
 var darkmode = document.getElementById("darkmode");
@@ -15,7 +24,34 @@ var topicr_p = document.getElementById("topicr_p");
 var topicr_h3 = document.getElementById("topicr_h3");
 var topicl_h3 = document.getElementById("topicl_h3");
 var topicl_p = document.getElementById("topicl_p");
+var navbar_logo = document.getElementById("navbar_logo");
+var popularQuestions_icon_right = document.getElementsByClassName("popularQuestions_icon_right");
+var popularQuestions_link = document.getElementsByClassName("popularQuestions_link");
 
+navbar_logo.addEventListener('click', function () {
+    open('index.html', '_self');
+})
+
+$('.popularQuestions_icon_right').click( function (e) {
+    let p = $(e.target).parents('.col-md-12').find('p');
+    let arrow_down = $(e.target).parents('.col-md-12').find('.popularQuestions_icon_right');
+    let arrow_up = $(e.target).parents('.col-md-12').find('.popularQuestions_icon_up');
+    
+    p.css('display', 'block');
+    arrow_down.css('display', 'none');
+    arrow_up.css('display', 'block');
+    
+})
+
+$('.popularQuestions_icon_up').click( function (e) {
+    let p = $(e.target).parents('.col-md-12').find('p');
+    let arrow_down = $(e.target).parents('.col-md-12').find('.popularQuestions_icon_right');
+    let arrow_up = $(e.target).parents('.col-md-12').find('.popularQuestions_icon_up');
+   
+    p.css('display', 'none');
+    arrow_down.css('display', 'block');
+    arrow_up.css('display', 'none');
+})
 
 
 darkmode.addEventListener('click', function () {
@@ -55,12 +91,20 @@ const setLanguage = (language) =>{
         topicr_h3.dir = 'ltr';
         topicl_h3.dir = 'rtl';
         topicl_p.dir = 'rtl';
+        popularQuestions_icon_right[0].style.transform = 'rotate(180deg)';
+        for (let index = 0; index < popularQuestions_icon_right.length; index++) {
+            popularQuestions_icon_right[index].style.transform = 'rotate(180deg)';
+            
+        }
     }
     else if(language === 'en'){
         topicr_p.dir = 'ltr';
         topicr_h3.dir = 'rtl';
         topicl_h3.dir = 'ltr';
         topicl_p.dir = 'ltr';
+        for (let index = 0; index < popularQuestions_icon_right.length; index++) {
+            popularQuestions_icon_right[index].style.transform = 'rotate(360deg)';
+        }
     }
 
     // languageSel.classList.toggle('active-lang');
@@ -74,3 +118,17 @@ const setLanguage = (language) =>{
 
     document.dir = language === 'ar' ? 'rtl' : 'ltr';
 }
+
+$('#popularQuestions_link').click(function () {
+    $('#popularQuestions').css('display', 'block');
+    $('#popularQuestions').removeClass('d-none');
+    $('main').css('display', 'none');
+    $('main').removeClass('d-flex');
+    $('#topics').css('display', 'none');
+    $('#services').css('display', 'none');
+    $('#supported').css('display', 'none');
+    $('#reg-now').css('display', 'none');
+    $('#reg-now').removeClass('d-flex');
+})
+
+})

@@ -9,11 +9,14 @@ const translations = {
         arabic: "Arabic",
         login: "Login",
         register: "Register",
-        homeh1:"Everything an Arab Designer Needs in one Palce.",
+        homeh1_s1:"Everything an ",
+        homeh1_s2:" Arab Designer ",
+        homeh1_s3:" Needs in one Palce.",
         homep:"Please choose a link from your favorite site and put the link here...",
         topicr_h3:"Everything You Need to Create Amazing Designs",
         topicl_h3 :"Ease of use",
-        topic_p:"DokkanMosmm: It supports more than one international website, which will greatly facilitate the design process for you.We guarantee you the highest quality and best prices.",
+        topic_h6_span:"DokkanMosmm",
+        topic_h6_p:":It supports more than one international website, which will greatly facilitate the design process for you.We guarantee you the highest quality and best prices.",
         services:"Services",
         unbeatablePrice:"Unbeatable Price",
         unbeatablePrice_p:"We are available to serve our customers anytime, anywhere, 24 hours a day, 7 days a week, 365 days a year through multiple communication channels.",
@@ -40,7 +43,18 @@ const translations = {
                      We also now seek to provide a service for watching cartoons and documentaries directly and without downloading.
                     And don't forget our best service to buy any course from Udemy for only $5.
                   `,
-        footer_copyright:"All rights reserved @2024 DokanMosmm"
+        footer_copyright:"All rights reserved @2024 DokanMosmm",
+        popularQuestions:"Some Important Frequently asked Questions?",
+        popularQuestions_p:"Some answers to the questions raised by some customers, but if you have any questions, please contact us",
+        DokanMosmm:"Dokan Mosmm",
+        howWorks:"how Dokan mosmm Works?",
+        howWorks_p:`You can complete the payment process using your PayPal account or via credit card. Paying the amount in this way only helps us guarantee your right to obtain the service or cancel it, etc.`,
+        downloadQuest:"How can I download files?",
+        supsCost:"What is the cost of subscription and packages?",
+        myPoints:"Do my points expire?",
+        paymentMethod:"What Payment Methods are Available?",
+        cancelSups:"Can I cancel the subscription?",
+        invest:"Can I invest in Dokan Mosmm?",
     },
     "ar": {
         home: "الرئيسية",
@@ -52,11 +66,14 @@ const translations = {
         arabic: "العربية",
         login: "تسجيل الدخول",
         register: "انشاء حساب",
-        homeh1:"كل ما يحتاج المُصمم العربي في مكان واحد.",
+        homeh1_s1:" كل مايحتاج",
+        homeh1_s2:" المصمم العربي ",
+        homeh1_s3:" في مكان واحد.",
         homep:"من فضلك قم باختيار رابط من موقعك المفضل وضع الرابط في رابط الملف.",
         topicr_h3 :".كل ما تحتاجه لإنشاء تصاميم متميزة",
         topicl_h3 :"السهولة في الأستخدام",
-        topic_p:"دكان مصمم: يدعم اكثر من موقع من المواقع العالمية، التي ستُسهل عليك عمليه التصميم بشكل كبير.نضمن لك اعلي جوده وأفضل الأسعار.",
+        topic_h6_span:"دكان مصمم",
+        topic_h6_p:":يدعم اكثر من موقع من المواقع العالمية، التي ستُسهل عليك عمليه التصميم بشكل كبير.نضمن لك اعلي جوده وأفضل الأسعار.",
         services:"المميزات",
         unbeatablePrice:"السعر الغير قابل للمنافسة.",
         unbeatablePrice_p:"نحن متواجدون لخدمة عملائنا في أي وقت وفي أي مكان، على مدار الساعة طوال أيام الأسبوع، 365 يومًا في السنة من خلال قنوات اتصال  متعددة ",
@@ -77,7 +94,21 @@ const translations = {
         registerNow_p:"احصل على صور بأعلى جودة وبأفضل الأسعار.احصل على فرصة لتحميل صور عالية الجودة من أي موقع بندعمه لك وبدون حقوق ملكية، صور، وفيكتور ورسوم توضيحية لأي تطبيق تقريبًا.سواء كنت تبحث عن فيكتور أو رسوم توضيحية لتحسين مظهر منصاتك الاجتماعية أو ملف أعمالك أو لعمل الاعلانات والمواقع الإلكترونية والمدونات والأشياء القابلة للطباعة أو اللوحات الإعلانية ؛ فنحن نغطيهم جميعاً.",
         registerNow_btn:"انشاء حساب",
         footer_p:`نقدم لكم خدمة مميزة جدًا يمكنك من خلالها تحميل كل ما تحتاج من البرامج ونسخ الويندوز والكورسات والالعاب بشكل مجانى تمامًا. كما نسعى الان لتقديم خدمة مشاهدة أفلام الكرتون والأفلام الوثائقية مباشرة وبدون تحميل . ولا تنسى أفضل خدمة لدينا لشراء أى كورس من يوديمى بـ 5 دولار فقط . `,
-        footer_copyright:"جميع الحقوق محفوظه @2023 دكان مصمم"
+        footer_copyright:"جميع الحقوق محفوظه @2023 دكان مصمم",
+        popularQuestions:"بعض الاسألة الشائعة الهامة؟",
+        popularQuestions_p:"بعض الاجابات عن الاسألة التي طرحها بعض العملاء ولكن في حالة ان لديك اي استفسار يرجي التواصل معنا",
+        DokanMosmm:"دكان مصمم",
+        howWorks:"كيف يعمل دكان المصمم ؟",
+        howWorks_p:`مكنك إكمال عملية الدفع باستخدام PayPal الخاص بك 
+                    الحساب أو عن طريق بطاقة الائتمان. دفع المبلغ بهذه الطريقة يساعد فقط 
+                    نضمن لك حقك في الحصول على الخدمة أو إلغائها وما إلى ذلك.`,
+        downloadQuest:"ازاي اقدر أحمل الملفات من الموقع ؟",
+        supsCost:"ماتكلفة الاشتراك والباقات ؟",
+        myPoints:"هل تنتهي صلاحية النقاط الخاصة بي ؟",
+        paymentMethod:"ماهي طرق الدفع المتوفرة ؟",
+        cancelSups:"هل يمكني الغاء الاشتراك ؟",
+        invest:"هل يمكنني ان استثمر في دكان مصمم ؟"
+
     }
 }
 

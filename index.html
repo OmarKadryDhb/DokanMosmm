@@ -12,10 +12,11 @@
           <i class="arrow-top-icon fa-solid fa-arrow-up"></i>
         </a>
       </div>
+
       <!-- start section nav -->
       <nav class="navbar navbar-expand-lg navbar-light bg-light"  id="navbar">
         <div class="container">
-          <div dir="ltr" class="navbar-logo d-flex justify-content-center align-items-center">
+          <div dir="ltr"  id="navbar_logo" class="navbar-logo d-flex justify-content-center align-items-center">
             <div class="mosmm-img-parent">
               <img class="mosmm-img" src="./images/mosmm.png" alt="">
             </div>
@@ -30,19 +31,19 @@
           <div class="collapse navbar-collapse navbar-options" id="navbarSupportedContent">
             <ul class="navbar-nav navbar-options-a m-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" data-i18n='home' aria-current="page" href="#home">Home</a>
+                <a class="nav-link active" data-i18n='home' aria-current="page" href="index.html">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#prices" data-i18n='prices'>Prices</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#questions" data-i18n='questions'>Popular Questions</a>
+              <li class="nav-item" id="popularQuestions_link">
+                <a class="nav-link" data-i18n='questions' href="#popularQuestions">Popular Questions</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#supported" data-i18n='supported'>Supported Sites</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#help" data-i18n='help'>Help</a>
+                <a class="nav-link" data-i18n='help' id="contact">Contact Us</a>
               </li>
             </ul>
           </div>
@@ -65,7 +66,7 @@
       <!-- start section home -->
       <main class="Home d-flex justify-content-center align-items-start" id="home">
         <div class="container pt-5">
-              <h1 class='text-black fw-bold pt-5 mt-5' data-i18n='homeh1'>Everything an Arab Designer Needs in one Palce.</h1>
+              <h1 class='text-black fw-bold pt-5 mt-5'><span  data-i18n='homeh1_s1'>Everything an</span><span data-i18n='homeh1_s2' id="arabDesigner">Arab Designer</span><span data-i18n='homeh1_s3'>Needs in one Palce.</span></h1>
             <p class="text-center fw-light" data-i18n='homep'>Please choose a link from your favorite site and put the link here...</p>
             <div class="search d-flex align-items-center p-3 rounded-3">
                 <input id="search" type="text" class='form-control p-3 w-100 border-0' data-i18n='homeinput' placeholder='Put File Link Here' />
@@ -76,8 +77,121 @@
       </main>
       <!-- end section home -->
       
+      <div class="popularQuestion d-none" id="popularQuestions">
+        <div class="container">
+          <div class="title text-center pt-3">
+            <h1 class="fw-bold" data-i18n="popularQuestions">Some important frequently asked questions?</h1>
+            <p data-i18n="popularQuestions_p">Some answers to the questions raised by some customers, but if you have any questions, please contact us
+            </p>
+          </div>
+          <div class="questionmark-img pt-2 pb-3">
+            <div class="questionmark-img-parent m-auto">
+              <img src="./images/question-mark.png" alt="">
+            </div>
+          </div>
+          <div class="name text-center mt-4">
+            <h2 class="fw-bold" data-i18n="DokanMosmm">Dokan Mosmm</h2>
+          </div>
+          <div class="row">
+            <!-- 1 -->
+            <div class="col-md-12 mt-4 d-flex justify-content-center align-items-center">
+              <div class="card-parent p-3  d-flex justify-content-between align-items-center">
+                <div class="card-inner">
+                  <h4 data-i18n="howWorks">How Dokan Mosmm Works?</h4>
+                  <p class="m-0" id="popularQuestions_p" data-i18n="howWorks_p">You can complete the payment process using your PayPal 
+                    account or via credit card. Paying the amount in this way only helps 
+                    us guarantee your right to obtain the service or cancel it, etc.</p>
+                </div>
+                <div class="arrow-icon">
+                  <i class="fa-solid fa-chevron-right popularQuestions_icon_right" id="popularQuestions_icon_down"></i>
+                  <i class="fa-solid fa-chevron-up popularQuestions_icon_up" id="popularQuestions_icon_up"></i>
+                </div>
+              </div>
+            </div>
+            <!-- 2 -->
+            <div class="col-md-12 mt-4 d-flex justify-content-center align-items-center">
+              <div class="card-parent p-3  d-flex justify-content-between align-items-center">
+                <div class="card-inner">
+                  <h4 data-i18n="downloadQuest">How can I download files?</h4>
+                  <p class="m-0" id="popularQuestions_p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos, ex</p>
+                </div>
+                <div class="arrow-icon">
+                  <i class="fa-solid fa-chevron-right popularQuestions_icon_right" id="popularQuestions_icon_down"> </i>
+                  <i class="fa-solid fa-chevron-up popularQuestions_icon_up" id="popularQuestions_icon_up"></i>
+                </div>
+              </div>
+            </div>
+            <!-- 3 -->
+            <div class="col-md-12 mt-4 d-flex justify-content-center align-items-center">
+              <div class="card-parent p-3  d-flex justify-content-between align-items-center">
+                <div class="card-inner">
+                  <h4 data-i18n="supsCost">What is the cost of subscription and packages?</h4>
+                  <p class="m-0" id="popularQuestions_p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos, ex</p>
+                </div>
+                <div class="arrow-icon">
+                  <i class="fa-solid fa-chevron-right popularQuestions_icon_right" id="popularQuestions_icon_down"> </i>
+                  <i class="fa-solid fa-chevron-up popularQuestions_icon_up" id="popularQuestions_icon_up"></i>
+                </div>
+              </div>
+            </div>
+            <!-- 4 -->
+            <div class="col-md-12 mt-4 d-flex justify-content-center align-items-center">
+              <div class="card-parent p-3  d-flex justify-content-between align-items-center">
+                <div class="card-inner">
+                  <h4 data-i18n="myPoints">Do my points expire?</h4>
+                  <p class="m-0" id="popularQuestions_p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos, ex</p>
+                </div>
+                <div class="arrow-icon">
+                  <i class="fa-solid fa-chevron-right popularQuestions_icon_right" id="popularQuestions_icon_down"> </i>
+                  <i class="fa-solid fa-chevron-up popularQuestions_icon_up" id="popularQuestions_icon_up"></i>
+                </div>
+              </div>
+            </div>
+            <!-- 5 -->
+            <div class="col-md-12 mt-4 d-flex justify-content-center align-items-center">
+              <div class="card-parent p-3  d-flex justify-content-between align-items-center">
+                <div class="card-inner">
+                  <h4 data-i18n="paymentMethod">What Payment Methods are Available?</h4>
+                  <p class="m-0" id="popularQuestions_p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos, ex</p>
+                </div>
+                <div class="arrow-icon">
+                  <i class="fa-solid fa-chevron-right popularQuestions_icon_right" id="popularQuestions_icon_down"> </i>
+                  <i class="fa-solid fa-chevron-up popularQuestions_icon_up" id="popularQuestions_icon_up"></i>
+                </div>
+              </div>
+            </div>
+            <!-- 6 -->
+            <div class="col-md-12 mt-4 d-flex justify-content-center align-items-center">
+              <div class="card-parent p-3  d-flex justify-content-between align-items-center">
+                <div class="card-inner">
+                  <h4 data-i18n="cancelSups">Can I cancel the subscription?</h4>
+                  <p class="m-0" id="popularQuestions_p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos, ex</p>
+                </div>
+                <div class="arrow-icon">
+                  <i class="fa-solid fa-chevron-right popularQuestions_icon_right" id="popularQuestions_icon_down"> </i>
+                  <i class="fa-solid fa-chevron-up popularQuestions_icon_up" id="popularQuestions_icon_up"></i>
+                </div>
+              </div>
+            </div>
+            <!-- 7 -->
+            <div class="col-md-12 mt-4 d-flex justify-content-center align-items-center">
+              <div class="card-parent p-3  d-flex justify-content-between align-items-center">
+                <div class="card-inner">
+                  <h4 data-i18n="invest">Can I invest in Dokan Mosmm?</h4>
+                  <p class="m-0" id="popularQuestions_p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos, ex</p>
+                </div>
+                <div class="arrow-icon">
+                  <i class="fa-solid fa-chevron-right popularQuestions_icon_right" id="popularQuestions_icon_down"> </i>
+                  <i class="fa-solid fa-chevron-up popularQuestions_icon_up" id="popularQuestions_icon_up"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <!-- start section topics -->
-       <div class="topics pt-5" dir="ltr">
+       <div class="topics pt-5" dir="ltr" id="topics">
         <div class="container">
           <div class="row mb-3 d-flex justify-content-center align-items-center">
             <div class="col-md-6 d-flex justify-content-center align-items-center">
@@ -90,7 +204,7 @@
             <div class="col-md-6 mb-auto">
               <div class="topic-right topic-content p-3">
                 <h3 class="fw-bold" data-i18n="topicr_h3" id="topicr_h3">Everything You Need to Create Amazing Designs</h3>
-                <p data-i18n="topic_p" id="topicr_p">DokanMosmm: It supports more than one international website, which will greatly facilitate the design process for you.We guarantee you the highest quality and best prices.</p>
+                <h6 class="" id="topicr_p"><span class="dokan-span" data-i18n="topic_h6_span">DokanMosmm:</span><span data-i18n="topic_h6_p">It supports more than one international website, which will greatly facilitate the design process for you.We guarantee you the highest quality and best prices.</span></h6>
               </div>
             </div>
           </div>
@@ -98,7 +212,7 @@
             <div class="col-md-6 mb-auto">
               <div class="topic-left topic-content p-3">
                 <h3 class="fw-bold" data-i18n="topicl_h3" id="topicl_h3">Ease of use</h3>
-                <p data-i18n="topic_p" id="topicl_p">DokanMosmm: It supports more than one international website, which will greatly facilitate the design process for you.We guarantee you the highest quality and best prices.</p>
+                <h6 class="" id="topicl_p"><span class="dokan-span" data-i18n="topic_h6_span">DokanMosmm:</span><span data-i18n="topic_h6_p">It supports more than one international website, which will greatly facilitate the design process for you.We guarantee you the highest quality and best prices.</span></h6>
               </div>
             </div>
             <div class="col-md-6 d-flex justify-content-center align-items-center">
@@ -412,8 +526,9 @@
         </div>
        </footer>
       <!-- end section footer -->
-      
-         <script src="js/bootstrap.bundle.min.js"></script>
-         <script src="js/index.js" type="module"></script>
+        
+        <script src="./js/code.jquery.com_jquery-3.7.0.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/index.js" type="module"></script>
     </body>
 </html>
