@@ -27,17 +27,22 @@ var topicl_p = document.getElementById("topicl_p");
 var navbar_logo = document.getElementById("navbar_logo");
 var popularQuestions_icon_right = document.getElementsByClassName("popularQuestions_icon_right");
 var popularQuestions_link = document.getElementsByClassName("popularQuestions_link");
+var popularQuestions = document.getElementById("popularQuestions");
 
 navbar_logo.addEventListener('click', function () {
     open('index.html', '_self');
 })
+
+let slide =$('.card-inner h4').siblings('p')
+    slide.slideUp();
 
 $('.popularQuestions_icon_right').click( function (e) {
     let p = $(e.target).parents('.col-md-12').find('p');
     let arrow_down = $(e.target).parents('.col-md-12').find('.popularQuestions_icon_right');
     let arrow_up = $(e.target).parents('.col-md-12').find('.popularQuestions_icon_up');
     
-    p.css('display', 'block');
+    let slide =$(e.target).parents('.col-md-12').find('p')
+    slide.slideToggle();
     arrow_down.css('display', 'none');
     arrow_up.css('display', 'block');
     
@@ -48,7 +53,8 @@ $('.popularQuestions_icon_up').click( function (e) {
     let arrow_down = $(e.target).parents('.col-md-12').find('.popularQuestions_icon_right');
     let arrow_up = $(e.target).parents('.col-md-12').find('.popularQuestions_icon_up');
    
-    p.css('display', 'none');
+    let slide =$(e.target).parents('.col-md-12').find('p')
+    slide.slideToggle();
     arrow_down.css('display', 'block');
     arrow_up.css('display', 'none');
 })
@@ -64,14 +70,13 @@ darkmode.addEventListener('click', function () {
     supported.classList.toggle('night');
     regNow.classList.toggle('night');
     footer.classList.toggle('night');
+    popularQuestions.classList.toggle('night');
 })
 
 const languageSelector = document.querySelector('select');
 languageSelector.addEventListener('change', (event) => {
     setLanguage(event.target.value);
     localStorage.setItem('lang', event.target.value);
-    
-  
 })
 
 
@@ -80,7 +85,6 @@ document.addEventListener('DOMContentLoaded', () => {
 })
 const setLanguage = (language) =>{
     const elements = document.querySelectorAll('[data-i18n]');
-
     elements.forEach(element => {
         const transKey = element.getAttribute('data-i18n');
         element.textContent = translations[language][transKey]
