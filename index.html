@@ -39,8 +39,8 @@
               <li class="nav-item">
                 <a class="nav-link" href="#supported" data-i18n='supported'>Supported Sites</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" data-i18n='help' id="contact">Contact Us</a>
+              <li class="nav-item" id="contact_link">
+                <a class="nav-link" data-i18n='contactUs'>Contact Us</a>
               </li>
             </ul>
           </div>
@@ -53,8 +53,8 @@
                 <option value='ar' data-i18n='arabic'>Arabic</option>
               </select>
             </div>
-            <button class="login-btn me-2" data-i18n='login'>Login</button>
-            <button class="register-btn ms-1" data-i18n='register'>Register</button>
+            <button class="login-btn me-2 pe-3 ps-3" data-i18n='login'>Login</button>
+            <button class="register-btn ms-1 ps-2 pe-3 text-center" data-i18n='register'>Register</button>
           </div>
         </div>
       </nav>
@@ -186,6 +186,60 @@
           </div>
         </div>
       </div>
+
+      <div class="contact d-none" id="contact">
+        <div class="container pt-5">
+          <div class="title text-center pt-3">
+            <h1 class="fw-bold" data-i18n="contactUs">Contact Us</h1>
+            <p class="fw-light" data-i18n="contactUs_p">If you would like to inquire about any of our services, send us a message.</p>
+          </div>
+          <div class="mail-img pt-4 pb-2">
+            <div class="mail-img-parent m-auto">
+              <img src="./images/mail.png" alt="">
+            </div>
+          </div>
+          <div class="row form-control border-0">
+            <!-- 1 -->
+            <div class="col-md-12 mt-4 d-flex justify-content-center align-items-center">
+              <div class="card-parent p-3">
+                <div class="input-name">
+                  <h4 class="fw-bold" data-i18n="fullName">Full Name</h4>
+                </div>
+                <input type="text" class="w-100 form-control pt-3 pb-3">
+              </div>
+            </div>
+            <!-- 2 -->
+            <div class="col-md-12 mt-4 d-flex justify-content-center align-items-center">
+              <div class="card-parent p-3">
+                <div class="input-name">
+                  <h4 class="fw-bold" data-i18n="phoneNumber">Phone Number</h4>
+                </div>
+                <input type="text" class="w-100 form-control pt-3 pb-3">
+              </div>
+            </div>
+            <!-- 3 -->
+            <div class="col-md-12 mt-4 d-flex justify-content-center align-items-center">
+              <div class="card-parent p-3">
+                <div class="input-name">
+                  <h4 class="fw-bold" data-i18n="email">Email</h4>
+                </div>
+                <input type="text" class="w-100 form-control pt-3 pb-3">
+              </div>
+            </div>
+            <!-- 4 -->
+            <div class="col-md-12 mt-4 d-flex justify-content-center align-items-center">
+              <div class="card-parent p-3">
+                <div class="input-name">
+                  <h4 class="fw-bold" data-i18n="yourMessage">Your Message</h4>
+                </div>
+                <textarea class="w-100 rounded-5 form-control pt-3 pb-3" rows="10" name="" id=""></textarea>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
 
       <!-- start section topics -->
        <div class="topics pt-5" dir="ltr" id="topics">
@@ -375,7 +429,7 @@
                       <img src="./images/Adobestock.webp" alt="" />
                     </div>
                     <span class='fw-bold'>Adobestock</span>
-                    <span class='fw-light abled rounded-pill' data-i18n="able">abled</span>
+                    <span class='fw-light abled rounded-pill' data-i18n="able">Abled</span>
                   </div>
                 </div>
                 <!-- 6 -->
@@ -385,7 +439,7 @@
                       <img src="./images/Envato.webp" alt="" />
                     </div>
                     <span class='fw-bold'>Envato</span>
-                    <span class='fw-light abled rounded-pill' data-i18n="able">abled</span>
+                    <span class='fw-light abled rounded-pill' data-i18n="able">Abled</span>
                   </div>
                 </div>
                 <!-- 7 -->
@@ -395,7 +449,7 @@
                       <img src="./images/Flaticon.webp" alt="" />
                     </div>
                     <span class='fw-bold'>Flaticon</span>
-                    <span class='fw-light abled rounded-pill' data-i18n="able">abled</span>
+                    <span class='fw-light abled rounded-pill' data-i18n="able">Abled</span>
                   </div>
                 </div>
                  <!-- 8 -->
@@ -425,7 +479,7 @@
                       <img src="./images/Ui8.webp" alt="" />
                     </div>
                     <span class='fw-bold'>Ui8</span>
-                    <span class='fw-light abled rounded-pill' data-i18n="able">abled</span>
+                    <span class='fw-light abled rounded-pill' data-i18n="able">Abled</span>
                   </div>
                 </div>
                 </div>

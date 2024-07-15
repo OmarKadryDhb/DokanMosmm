@@ -4,7 +4,7 @@ const translations = {
         prices: "Prices",
         questions: "Popular Questions",
         supported: "Supported Sites",
-        help: "Help",
+        contactUs: "Contact Us",
         english: "English",
         arabic: "Arabic",
         login: "Login",
@@ -55,13 +55,18 @@ const translations = {
         paymentMethod:"What Payment Methods are Available?",
         cancelSups:"Can I cancel the subscription?",
         invest:"Can I invest in Dokan Mosmm?",
+        contactUs_p:"If you would like to inquire about any of our services, send us a message.",
+        fullName:"Full Name",
+        phoneNumber:"Phone Number",
+        email:"Email",
+        yourMessage:"Your Message",
     },
     "ar": {
         home: "الرئيسية",
         prices: "الأسعار",
         questions: "الأسئلة الشائعة",
         supported: "المواقع المدعومة",
-        help: "المساعدة",
+        contactUs: "تواصل معنا",
         english: "الانجليزية",
         arabic: "العربية",
         login: "تسجيل الدخول",
@@ -107,7 +112,12 @@ const translations = {
         myPoints:"هل تنتهي صلاحية النقاط الخاصة بي ؟",
         paymentMethod:"ماهي طرق الدفع المتوفرة ؟",
         cancelSups:"هل يمكني الغاء الاشتراك ؟",
-        invest:"هل يمكنني ان استثمر في دكان مصمم ؟"
+        invest:"هل يمكنني ان استثمر في دكان مصمم ؟",
+        contactUs_p:"إذا كنت تريد الاستفسار عن أي من خدماتنا، أرسل لنا رسالة.",
+        fullName:"الاسم بالكامل",
+        phoneNumber:"رقم الهاتف",
+        email:"البريد الالكتروني",
+        yourMessage:"الرساله الخاصه بك",
 
     }
 }

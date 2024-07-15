@@ -18,16 +18,16 @@ var services = document.getElementById("services");
 var supported = document.getElementById("supported");
 var regNow = document.getElementById("reg-now");
 var footer = document.getElementById("footer");
-var languageSel = document.getElementById("language-selector");
-var search = document.getElementById("search");
+// var languageSel = document.getElementById("language-selector");
+// var search = document.getElementById("search");
 var topicr_p = document.getElementById("topicr_p");
 var topicr_h3 = document.getElementById("topicr_h3");
 var topicl_h3 = document.getElementById("topicl_h3");
 var topicl_p = document.getElementById("topicl_p");
 var navbar_logo = document.getElementById("navbar_logo");
 var popularQuestions_icon_right = document.getElementsByClassName("popularQuestions_icon_right");
-var popularQuestions_link = document.getElementsByClassName("popularQuestions_link");
 var popularQuestions = document.getElementById("popularQuestions");
+var contact = document.getElementById("contact");
 
 navbar_logo.addEventListener('click', function () {
     open('index.html', '_self');
@@ -71,6 +71,7 @@ darkmode.addEventListener('click', function () {
     regNow.classList.toggle('night');
     footer.classList.toggle('night');
     popularQuestions.classList.toggle('night');
+    contact.classList.toggle('night');
 })
 
 const languageSelector = document.querySelector('select');
@@ -126,13 +127,40 @@ const setLanguage = (language) =>{
 $('#popularQuestions_link').click(function () {
     $('#popularQuestions').css('display', 'block');
     $('#popularQuestions').removeClass('d-none');
+    
+    // $('#contact').css('display', 'block');
+    $('#contact').addClass('d-none');
+    
+
     $('main').css('display', 'none');
     $('main').removeClass('d-flex');
+    
     $('#topics').css('display', 'none');
     $('#services').css('display', 'none');
     $('#supported').css('display', 'none');
+    
     $('#reg-now').css('display', 'none');
     $('#reg-now').removeClass('d-flex');
 })
+
+//Contact page 
+$('#contact_link').click(function () {
+    $('#contact').css('display', 'block');
+    $('#contact').removeClass('d-none');
+    
+    // $('#popularQuestions').css('display', 'block');
+    $('#popularQuestions').addClass('d-none');
+    
+    $('main').css('display', 'none');
+    $('main').removeClass('d-flex');
+    
+    $('#topics').css('display', 'none');
+    $('#services').css('display', 'none');
+    $('#supported').css('display', 'none');
+    
+    $('#reg-now').css('display', 'none');
+    $('#reg-now').removeClass('d-flex');
+})
+
 
 })

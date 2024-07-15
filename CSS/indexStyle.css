@@ -192,6 +192,12 @@ body.night{
         display: flex;
         justify-content: start;
     }
+    .navbar-btns .register-btn{
+        font-size: 14px;
+    }
+    .navbar-btns .login-btn{
+        font-size: 14px;
+    }
 }
 /* Home */
 .Home{
@@ -502,7 +508,7 @@ footer .copyright-span{
 .popularQuestion  p{
     color: black !important;
 }
-.card-parent{
+.popularQuestion .card-parent{
     width: 70%;
     background-color: #F5F5F5 !important;
     border-radius: 5px;
@@ -517,7 +523,7 @@ footer .copyright-span{
     color: black !important;
     display: none;
 }
-.card-parent .arrow-icon i{
+.popularQuestion .card-parent .arrow-icon i{
     cursor: pointer;
     transition: all 0.5s;
     background-color: white;
@@ -552,4 +558,52 @@ footer .copyright-span{
 }
 .popularQuestion.night .card-parent .card-inner p { 
     color: #efefef !important;
+}
+/* contact */
+.contact{
+    min-height: 100vh;
+    padding-top: 120px;
+    padding-bottom: 50px;
+}
+.mail-img .mail-img-parent{
+    width: 100px; 
+}
+.mail-img .mail-img-parent img{
+     width: 100%; 
+}
+.contact .card-parent{
+    width: 50%;
+} 
+.contact .card-parent input{
+    border: 2px solid orange;
+    border-radius: 10px !important;
+}
+.contact .card-parent textarea{
+    border: 2px solid orange;
+}
+/* .contact .card-parent input:focus{
+    outline: none;
+    border: none;
+} */
+ /* night */
+.contact.night h1{
+    color: white !important;
+}
+.contact.night p{
+    color: white !important;
+}
+.contact.night .input-name h4{
+    color: white !important;
+}
+.contact.night .card-parent input{
+    color: white !important;
+}
+
+ .contact.night .form-control{
+    background-color: #0c1d32 !important;
+}
+@media (max-width: 750px) {
+    .contact .card-parent{
+        width: 100%;
+    } 
 }
