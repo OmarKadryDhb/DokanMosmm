@@ -143,6 +143,7 @@ $('#popularQuestions_link').click(function () {
     // $('#contact').css('display', 'block');
     $('#contact').addClass('d-none');
     
+    $('#arrow-top').addClass('d-none');
 
     $('main').css('display', 'none');
     $('main').removeClass('d-flex');
@@ -163,6 +164,9 @@ $('#contact_link').click(function () {
     // $('#popularQuestions').css('display', 'block');
     $('#popularQuestions').addClass('d-none');
     
+    $('#arrow-top').addClass('d-none');
+
+
     $('main').css('display', 'none');
     $('main').removeClass('d-flex');
     
