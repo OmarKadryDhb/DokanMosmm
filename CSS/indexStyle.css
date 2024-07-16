@@ -512,8 +512,10 @@ footer .copyright-span{
     width: 70%;
     background-color: #F5F5F5 !important;
     border-radius: 5px;
-    border: 2px solid var(--orange-color);
+    border: 2px solid #e0e0e0;
     /* padding: 10px; */
+}.popularQuestion .card-parent.opened{
+    border: 2px solid var(--orange-color);
 }
 .popularQuestion .card-parent .card-inner h4{
     color: black ;
@@ -526,9 +528,9 @@ footer .copyright-span{
 .popularQuestion .card-parent .arrow-icon i{
     cursor: pointer;
     transition: all 0.5s;
-    background-color: white;
+    background-color: var(--orange-color);
     padding: 15px;
-    color: var(--orange-color);
+    color: white;
     border-radius: 50%;
 }
 .card-parent .arrow-icon #popularQuestions_icon_up{

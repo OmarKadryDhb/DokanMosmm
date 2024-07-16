@@ -38,6 +38,8 @@ darkmode.addEventListener('click', function () {
             const transKey = element.getAttribute('data-i18n');
             element.textContent = translations[language][transKey]
         })
+
+        
     
         // languageSel.classList.toggle('active-lang');
     

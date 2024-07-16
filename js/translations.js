@@ -66,7 +66,8 @@ const translations = {
         confirmPassword:"Confirm Password",
         checkBox:`By creating an account,
         you agree to our Terms of Service and Privacy Policy.`,
-        already:"Already have an account?",
+        already:"Already have an account ?",
+        login_space: " Login",
         hello:"Hello my Friend",
         enterData:"Enter the data received by us to access your account!"
     },

@@ -30,6 +30,7 @@ var popularQuestions = document.getElementById("popularQuestions");
 var contact = document.getElementById("contact");
 var register = document.getElementById("register");
 var login = document.getElementById("login");
+// var cardParent = document.getElementById("cardParent");
 
 navbar_logo.addEventListener('click', function () {
     open('index.html', '_self');
@@ -48,14 +49,19 @@ let slide =$('.card-inner h4').siblings('p')
     slide.slideUp();
 
 $('.popularQuestions_icon_right').click( function (e) {
-    let p = $(e.target).parents('.col-md-12').find('p');
     let arrow_down = $(e.target).parents('.col-md-12').find('.popularQuestions_icon_right');
     let arrow_up = $(e.target).parents('.col-md-12').find('.popularQuestions_icon_up');
+    let cardParent = $(e.target).parents('.col-md-12').find('.card-parent');
     
     let slide =$(e.target).parents('.col-md-12').find('p')
     slide.slideToggle();
     arrow_down.css('display', 'none');
     arrow_up.css('display', 'block');
+    
+    if (slide.slideDown() ) {
+        cardParent.classList.add('opened')
+        console.log('opened');
+    }
     
 })
 
@@ -63,11 +69,18 @@ $('.popularQuestions_icon_up').click( function (e) {
     let p = $(e.target).parents('.col-md-12').find('p');
     let arrow_down = $(e.target).parents('.col-md-12').find('.popularQuestions_icon_right');
     let arrow_up = $(e.target).parents('.col-md-12').find('.popularQuestions_icon_up');
+    let cardParent = $(e.target).parents('.col-md-12').find('.card-parent');
    
     let slide =$(e.target).parents('.col-md-12').find('p')
     slide.slideToggle();
     arrow_down.css('display', 'block');
     arrow_up.css('display', 'none');
+
+    if (slide.slideUp() ) {
+        cardParent.classList.remove('opened')
+        console.log('opened');
+    }
+    
 })
 
 
@@ -119,6 +132,8 @@ const setLanguage = (language) =>{
         topicr_h3.dir = 'rtl';
         topicl_h3.dir = 'ltr';
         topicl_p.dir = 'ltr';
+        $('.checkbox').css('margin-bottom', '20px');
+        
         for (let index = 0; index < popularQuestions_icon_right.length; index++) {
             popularQuestions_icon_right[index].style.transform = 'rotate(360deg)';
         }
