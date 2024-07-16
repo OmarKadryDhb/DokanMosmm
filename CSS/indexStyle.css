@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
 /* general */
 :root{
-    --red-color:red;
+    --orange-color:orange;
     --black-color:#404040;
 }
 *{
@@ -27,7 +27,7 @@ body{
 }
 .arrow-top a{ 
     text-decoration: none;
-    color: orange;
+    color: var(--orange-color);
 }
 /*  */
 .title{
@@ -63,10 +63,10 @@ body{
     transition: all 0.5s;
 }
 .navbar-options a:hover{
-    color: orange;
+    color: var(--orange-color);
 }
 .navbar .login-btn{
-    background: orange;
+    background: var(--orange-color);
     font-size: 16px;
     color: white ;
     border: none;
@@ -79,7 +79,7 @@ body{
     background-color: rgb(255, 132, 0);
 }
 .navbar .register-btn{
-    background:F5F5F5;
+    background:#F5F5F5;
     font-size: 16px;
     color: black ;
     border: none;
@@ -89,11 +89,11 @@ body{
     transition: all 0.4s;
 }
 .navbar .register-btn:hover{
-    background-color: orange;
+    background-color: var(--orange-color);
     color: white;
 }
 .navbar .active{
-    color: orange !important;
+    color: var(--orange-color) !important;
 }
 .language-icon{
     color: orange;
@@ -162,10 +162,10 @@ body.night{
     color: white !important;
 }
 #navbarSupportedContent.night .active{
-    color: orange !important;
+    color: var(--orange-color) !important;
 }
 #navbarSupportedContent.night a:hover{
-    color: orange !important;
+    color: var(--orange-color) !important;
 }
 #language-selector:focus-visible{
     outline: none;
@@ -213,7 +213,7 @@ body.night{
     margin-bottom: 25px;
 }
 .Home h1 #arabDesigner{
-    color: orange !important;
+    color: var(--orange-color) !important;
 }
 .Home p{
     font-size: 20px;
@@ -225,7 +225,7 @@ body.night{
     background-color: white;
 }
 .Home .search i{
-    background-color: orange;
+    background-color: var(--orange-color);
     cursor: pointer;
 }
 
@@ -259,7 +259,7 @@ body.night{
     width: 100%;
 }
 .topics .topic-content .dokan-span{
-    color: orange;
+    color: var(--orange-color);
     font-weight: bold;
 }
 .topics .topic-right h3{
@@ -321,18 +321,18 @@ body.night{
 .supported .content-header .contents:hover i {
     transform: scale(1.2);
 }
-.supported .content-header .contents i{
+/* .supported .content-header .contents i{
     color: red;
 }
 .supported .content-header .left{
     border-bottom: solid 5px red;
-}
+} */
 .supported .content-price{
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
 }
 .supported .content-price{
-    border: 2px solid orange;
+    border: 2px solid var(--orange-color);
     border-radius: 5px;
 }
 .supported .card .img-parent{
@@ -371,7 +371,7 @@ body.night{
     background-color: #142D4C !important;
 }
 #supported.night button{
-    background-color: orange !important;
+    background-color: var(--orange-color) !important;
     color: white;
 }
 #supported.night .content-price{
@@ -396,7 +396,7 @@ body.night{
     background-color: #F5F5F5;
 }
 .register-now button{
-    background:orange;
+    background:var(--orange-color);
     font-size: 16px;
     color: white ;
     border: none;
@@ -459,7 +459,7 @@ footer .col-social .img-parent{
     padding: 1px;
 }
 footer .col-social .img-parent:hover{
-    border: 2px solid orange;
+    border: 2px solid var(--orange-color);
     border-radius:50% ;
     
 }
@@ -468,7 +468,7 @@ footer .col-social .img-parent img{
     cursor: pointer;
 }
 footer .col-copyright .copyright-content span span{
-    color: orange;
+    color: var(--orange-color);
 }
 footer .copyright-span{
     color: #efefef !important;
@@ -512,7 +512,7 @@ footer .copyright-span{
     width: 70%;
     background-color: #F5F5F5 !important;
     border-radius: 5px;
-    border: 2px solid orange;
+    border: 2px solid var(--orange-color);
     /* padding: 10px; */
 }
 .popularQuestion .card-parent .card-inner h4{
@@ -528,7 +528,7 @@ footer .copyright-span{
     transition: all 0.5s;
     background-color: white;
     padding: 15px;
-    color: orange;
+    color: var(--orange-color);
     border-radius: 50%;
 }
 .card-parent .arrow-icon #popularQuestions_icon_up{
@@ -548,7 +548,7 @@ footer .copyright-span{
     color: #efefef !important;
 }
 .popularQuestion.night .name{
-    color: orange !important;
+    color: var(--orange-color) !important;
 }
 .popularQuestion.night .card-parent{
     background-color: #142D4C !important;
@@ -575,11 +575,11 @@ footer .copyright-span{
     width: 50%;
 } 
 .contact .card-parent input{
-    border: 2px solid orange;
+    border: 2px solid var(--orange-color);
     border-radius: 10px !important;
 }
 .contact .card-parent textarea{
-    border: 2px solid orange;
+    border: 2px solid var(--orange-color);
 }
 /* .contact .card-parent input:focus{
     outline: none;

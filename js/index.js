@@ -28,10 +28,21 @@ var navbar_logo = document.getElementById("navbar_logo");
 var popularQuestions_icon_right = document.getElementsByClassName("popularQuestions_icon_right");
 var popularQuestions = document.getElementById("popularQuestions");
 var contact = document.getElementById("contact");
+var register = document.getElementById("register");
+var login = document.getElementById("login");
 
 navbar_logo.addEventListener('click', function () {
     open('index.html', '_self');
 })
+
+register.addEventListener("click", function () {
+    open("register.html", "_self");
+});
+ 
+login.addEventListener("click", function () {
+     open("login.html", "_self");
+});
+ 
 
 let slide =$('.card-inner h4').siblings('p')
     slide.slideUp();
@@ -72,6 +83,7 @@ darkmode.addEventListener('click', function () {
     footer.classList.toggle('night');
     popularQuestions.classList.toggle('night');
     contact.classList.toggle('night');
+    login_section.classList.toggle('night');
 })
 
 const languageSelector = document.querySelector('select');

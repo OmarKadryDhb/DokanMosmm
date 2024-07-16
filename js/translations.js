@@ -57,9 +57,18 @@ const translations = {
         invest:"Can I invest in Dokan Mosmm?",
         contactUs_p:"If you would like to inquire about any of our services, send us a message.",
         fullName:"Full Name",
+        name:"Name",
         phoneNumber:"Phone Number",
         email:"Email",
         yourMessage:"Your Message",
+        welcome:"Welcome in Dokan Mosmm",
+        password:"Password",
+        confirmPassword:"Confirm Password",
+        checkBox:`By creating an account,
+        you agree to our Terms of Service and Privacy Policy.`,
+        already:"Already have an account?",
+        hello:"Hello my Friend",
+        enterData:"Enter the data received by us to access your account!"
     },
     "ar": {
         home: "الرئيسية",
@@ -115,9 +124,17 @@ const translations = {
         invest:"هل يمكنني ان استثمر في دكان مصمم ؟",
         contactUs_p:"إذا كنت تريد الاستفسار عن أي من خدماتنا، أرسل لنا رسالة.",
         fullName:"الاسم بالكامل",
+        name:"الاسم",
         phoneNumber:"رقم الهاتف",
         email:"البريد الالكتروني",
         yourMessage:"الرساله الخاصه بك",
+        welcome:"اهلا بك في دكان مصمم",
+        password:"كلمة المرور",
+        confirmPassword:"تاكيد كلمة المرور",
+        checkBox:"الموافقة على الشروط والاحكام",
+        already:"لديك حساب بالفعل ؟",
+        hello:"مرحبا بك يا صديقي",
+        enterData:"أدخل بيانات المستلمة بواسطتنا للوصول لحسابك!"
 
     }
 }
