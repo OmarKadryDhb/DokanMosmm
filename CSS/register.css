@@ -207,6 +207,16 @@ body.night{
     background-color: #142D4C;
     color: white;
 }
+.register-section .come-join{
+    background-color: #0c1d32;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.register-section .col-reg{
+    background-color: #efefef;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
 .register-container{
     width: max(23vw , 330px);
     background-color: #efefef;
@@ -257,20 +267,12 @@ body.night{
 }
 .register-condition{
     display: flex;
-    align-items: center;
-    gap: 8px;
-    margin-top: 15px;
+    /* align-items: center; */
+    /* justify-content: center; */
+    gap: 9px;
+    /* margin-top: 10px; */
 }
-.register-section .come-join{
-    background-color: #0c1d32;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-}
-.register-section .col-reg{
-    background-color: #efefef;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-}
+
 .register-condition input{
     margin-top: 5px;
 }
