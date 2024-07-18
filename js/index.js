@@ -30,7 +30,16 @@ var popularQuestions = document.getElementById("popularQuestions");
 var contact = document.getElementById("contact");
 var register = document.getElementById("register");
 var login = document.getElementById("login");
+var register_now_btn = document.getElementById("register-now-btn");
+var login_section = document.getElementById("login-section");
+var mail_dark= document.getElementById("mail-dark");
+var mail= document.getElementById("mail");
+
 // var cardParent = document.getElementById("cardParent");
+
+register_now_btn.addEventListener('click', function () {
+    open('register.html', '_self');
+})
 
 navbar_logo.addEventListener('click', function () {
     open('index.html', '_self');
@@ -97,6 +106,11 @@ darkmode.addEventListener('click', function () {
     popularQuestions.classList.toggle('night');
     contact.classList.toggle('night');
     login_section.classList.toggle('night');
+
+    // mail_dark.css('d-block');
+    // mail_dark.remove('d-none');
+
+    // $('#mail').css('display', 'none');
 })
 
 const languageSelector = document.querySelector('select');

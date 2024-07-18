@@ -332,8 +332,9 @@ body.night{
     border-bottom-right-radius: 5px;
 }
 .supported .content-price{
-    border: 2px solid var(--orange-color);
     border-radius: 5px;
+    background-color: #efefef !important;
+    /* box-shadow: 1px 10px 10px 10px rgba(0, 0, 0, 0.1); */
 }
 .supported .card .img-parent{
     width: 80px;
@@ -566,9 +567,10 @@ footer .copyright-span{
     min-height: 100vh;
     padding-top: 120px;
     padding-bottom: 50px;
+    /* background-color: #f8f4f4; */
 }
 .mail-img .mail-img-parent{
-    width: 100px; 
+    width: 200px; 
 }
 .mail-img .mail-img-parent img{
      width: 100%; 
@@ -583,6 +585,20 @@ footer .copyright-span{
 .contact .card-parent textarea{
     border: 2px solid var(--orange-color);
 }
+.contact .send-btn{
+    background:#173659;
+    font-size: 17px;
+    color: white;
+    border: none;
+    padding: 5px 80px;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: all 0.4s;
+}
+.contact .send-btn:hover{
+    background-color: var(--orange-color);
+}
+
 /* .contact .card-parent input:focus{
     outline: none;
     border: none;
@@ -600,9 +616,21 @@ footer .copyright-span{
 .contact.night .card-parent input{
     color: white !important;
 }
-
- .contact.night .form-control{
+.contact.night .form-control{
     background-color: #0c1d32 !important;
+}
+.contact .send-btn{
+    background:var(--orange-color);
+    font-size: 17px;
+    color: white;
+    border: none;
+    padding: 5px 80px;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: all 0.4s;
+}
+.contact .send-btn:hover{
+    background-color: #173659;
 }
 @media (max-width: 750px) {
     .contact .card-parent{

@@ -1,12 +1,18 @@
+import  translations  from "./translations.js";
+
 $(function() {
   // login
-var logEmail=document.getElementById("logEmail");
-var logPass=document.getElementById('logPass');
-var login_btn = document.getElementById('login_btn');
-var logError =  document.getElementById('logError');
+// var logEmail=document.getElementById("logEmail");
+// var logPass=document.getElementById('logPass');
+// var login_btn = document.getElementById('login_btn');
+// var logError =  document.getElementById('logError');
 var register = document.getElementById("register");
 var login = document.getElementById("login");
 var login_section = document.getElementById("login-section"); 
+var darkmode = document.getElementById("darkmode");
+var content = document.getElementsByTagName("body")[0];
+var navbar = document.getElementById("navbar");
+
 
 register.addEventListener("click", function () {
    open("register.html", "_self");
@@ -17,29 +23,48 @@ login.addEventListener("click", function () {
 });
 
 darkmode.addEventListener('click', function () {
+  darkmode.classList.toggle('active');
+  content.classList.toggle('night');
+  navbar.classList.toggle('night');
   login_section.classList.toggle('night');
 })
 
-var signinList;
-// localStorage
-if (localStorage.getItem('signinList')) {
-    signinList=JSON.parse(localStorage.getItem('signinList'));
-  }
-  else{
-    signinList=[]; 
-  }
 
-//Login 
- 
-  login_btn.addEventListener('click',function(){    
-    for (let i = 0; i < signinList.length; i++) {
-    if (logEmail.value==signinList[i].email && logPass.value==signinList[i].pass) {
-        open('home.html',"_self")
-    }else{
-      logError.classList.replace('d-none','d-block');
-    } 
-  }
-  })
   
+const languageSelector = document.querySelector('select');
+languageSelector.addEventListener('change', (event) => {
+    setLanguage(event.target.value);
+    localStorage.setItem('lang', event.target.value);
+})
+  
+  
+document.addEventListener('DOMContentLoaded', () => {
+  setLanguage(localStorage.getItem('lang'));
+})
+const setLanguage = (language) =>{
+    const elements = document.querySelectorAll('[data-i18n]');
+    elements.forEach(element => {
+      const transKey = element.getAttribute('data-i18n');
+      element.textContent = translations[language][transKey]
+    })
+
+    if (language === 'ar') {
+         
+    }
+    else if(language === 'en'){
+        $('.checkbox').css('margin-bottom', '20px');
+    }
+  
+      // languageSel.classList.toggle('active-lang');
+  
+      // if (languageSel.classList.contains('active-lang')) {
+      //     search.a("placeholder").value = "ضع رابط الملف هنا"
+      //     console.log("asa");
+      // }
+  
+  
+  
+      document.dir = language === 'ar' ? 'rtl' : 'ltr';
+}  
 
 })

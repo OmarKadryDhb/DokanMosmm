@@ -38,10 +38,10 @@
           </div>
         </div>
       </nav>
-    <main class="login-section" id="login-section">
-        <div class="container pt-4 pb-3">
-            <div class="title-1 text-center mb-2 pt-3">
-                <h2 data-i18n="hello">Hello my Friend</h2>
+    <main class="login-section d-flex justify-content-center align-items-center" id="login-section">
+        <div class="container pt-4 pb-3 m-1">
+            <div class="title-1 text-center mb-2 pt-5">
+                <h2 data-i18n="hello">Hello, Friend!</h2>
                 <p class="fw-light m-0" data-i18n="enterData">Enter the data received by us to access your account!</p>
             </div>
             <div class='login m-2' >
@@ -51,18 +51,26 @@
                         </div>
                         <div class="inputs">
                             <div class="input-name">
-                                <h6 data-i18n="email">Email</h6>
-                                <input class="w-100" type="email" required />
-                            </div>
-                            <div class="input-name">
-                                <h6 data-i18n="password">Password</h6>
-                                <input class="w-100" type="password" required />
-                            </div>
+                                <div class="email d-flex justify-content-center align-items-center">
+                                  <i class="fa-solid fa-user"></i>
+                                  <input id="logEmail" class="w-100" type="email" placeholder="Email" required />
+                                </div>
+                              </div>
+                            <div class="input-name d-flex justify-content-between align-items-center">
+                                <div class="password d-flex justify-content-center align-items-center">
+                                  <i class="fa-solid fa-lock"></i>
+                                  <input id="logPass" class="w-100" type="password" required  placeholder="Password"/>
+                                </div>
+                                <i class="eye fa-solid fa-eye"></i>
+                              </div>
                         </div>
-                        <button data-i18n="login">login</button>
+                        <small id="logError" class="text-danger text-center d-none">Wrong Password or Email</small>
+
+                        <button data-i18n="login" id="login_btn">login</button>
                        
-                        <p><span data-i18n="already">Create an account?</span><span data-i18n="login" class="signup-span"> Sign Up</span></p>
-                </form>
+                        <p class="m-0 p-0"><span data-i18n="already">Create an account ?</span><a href="register.html" data-i18n="signUp_space" class="signup-a"> Sign Up</a></p>
+                        <p class="m-0 p-0"><span data-i18n="forgetPass">Forget Password ?</span><a  data-i18n="UpdatePass_space" class="signup-a"> Update Password </a></p>
+                      </form>
             </div>
             
         </div>
@@ -71,7 +79,6 @@
 
     <script src="./js/code.jquery.com_jquery-3.7.0.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/login.js" type="module"></script>
-    <script src="js/index.js" type="module"></script>
+    <script defer src="js/login.js" type="module"></script>
 
 </html>

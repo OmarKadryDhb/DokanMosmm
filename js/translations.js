@@ -69,7 +69,11 @@ const translations = {
         already:"Already have an account ?",
         login_space: " Login",
         hello:"Hello my Friend",
-        enterData:"Enter the data received by us to access your account!"
+        enterData:"Enter the data received by us to access your account!",
+        forgetPass:"Forget Password ?",
+        UpdatePass_space:"Update Password",
+        send:'Send',
+        signUp_space:" Sign Up",
     },
     "ar": {
         home: "الرئيسية",
@@ -135,8 +139,12 @@ const translations = {
         checkBox:"الموافقة على الشروط والاحكام",
         already:"لديك حساب بالفعل ؟",
         hello:"مرحبا بك يا صديقي",
-        enterData:"أدخل بيانات المستلمة بواسطتنا للوصول لحسابك!"
-
+        enterData:"أدخل بيانات المستلمة بواسطتنا للوصول لحسابك!",
+        forgetPass:"نسيت كلمة المرور ؟",
+        UpdatePass_space:"اعادة تعيين كلمة المرور",
+        send:"ارسال",
+        signUp_space:" التسجيل",
+        login_space:" تسجيل الدخول"
     }
 }
 

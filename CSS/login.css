@@ -184,8 +184,8 @@ body.night{
 /*  */
 .login-section{
     min-height: 100vh;
-    padding-top: 100px;
-    padding-bottom: 50px;
+    padding-top: 10px;
+    /* padding-bottom: 50px; */
 }
 .login-section .container{
     border: 1px solid #d4d4d4 !important;
@@ -260,10 +260,25 @@ body.night{
 .login-container .inputs h6{
     font-weight: bold;
 }
+.login-container .input-name{
+    border: 1px solid var(--orange-color);
+    padding: 5px;
+    border-radius: 5px;
+}
+.login-container .input-name  i{
+    color: var(--orange-color);
+    margin-bottom: 3px;
+}
+.login-container .input-name .password i{
+    color: var(--orange-color);
+    margin-bottom: 3px;
+}
+.login-container .input-name .eye{
+    cursor: pointer;
+}
 .login-container .inputs input{
     outline: none;
-    border: 1px solid var(--orange-color);
-    border-radius: 5px;
+    border: none;
     padding: 5px;
 }
 .login-container button{
@@ -290,10 +305,14 @@ body.night{
 .login-condition input{
     margin-top: 5px;
 }
-.login-section p .signup-span{
+.login-section p .signup-a{
     color: var(--orange-color);
     cursor: pointer;
     font-weight: 500;
+    text-decoration: none;
+}
+.login-section p .signup-a:hover{
+    text-decoration: underline;
 }
 /* night */
 .login-section.night form{
@@ -302,6 +321,10 @@ body.night{
 .login-section.night .login-container h3{
     color: white !important;
 }
+.login-section.night form input{
+    background-color: #0c1d32 !important;
+    color: white;
+}
 @media (max-width: 900px) {
     .login-section .container{
         width: 100%;
@@ -309,6 +332,9 @@ body.night{
 
 }
 @media (max-width: 750px) {
+    .login-section{
+        padding-top: 117px;
+    }
     .login-section .card-parent{
         width: 100%;
     }
