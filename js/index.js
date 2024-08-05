@@ -28,6 +28,9 @@ var navbar_logo = document.getElementById("navbar_logo");
 var popularQuestions_icon_right = document.getElementsByClassName("popularQuestions_icon_right");
 var popularQuestions = document.getElementById("popularQuestions");
 var contact = document.getElementById("contact");
+var card_footer = document.getElementById("card-inner-content");
+var copyright_content = document.getElementById("copyright-content");
+
 var register = document.getElementById("register");
 var login = document.getElementById("login");
 var register_now_btn = document.getElementById("register-now-btn");
@@ -135,6 +138,9 @@ const setLanguage = (language) =>{
         topicr_h3.dir = 'ltr';
         topicl_h3.dir = 'rtl';
         topicl_p.dir = 'rtl';
+        card_footer.dir = 'rtl';
+        copyright_content.dir = 'rtl';
+
         popularQuestions_icon_right[0].style.transform = 'rotate(180deg)';
         for (let index = 0; index < popularQuestions_icon_right.length; index++) {
             popularQuestions_icon_right[index].style.transform = 'rotate(180deg)';
@@ -146,6 +152,8 @@ const setLanguage = (language) =>{
         topicr_h3.dir = 'rtl';
         topicl_h3.dir = 'ltr';
         topicl_p.dir = 'ltr';
+        card_footer.dir = 'ltr';
+        copyright_content.dir = 'ltr';
         $('.checkbox').css('margin-bottom', '20px');
         
         for (let index = 0; index < popularQuestions_icon_right.length; index++) {

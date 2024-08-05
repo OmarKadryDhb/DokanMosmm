@@ -203,6 +203,7 @@ body.night{
 .Home{
     min-height: 100vh;
     width: 100%;
+    padding-top: 100px;
 }
 .Home .container{
     padding: 20px;
@@ -392,8 +393,8 @@ body.night{
 }
 /* reg-now */
 .register-now{
-    min-height: 40vh;
-    padding-top: 30px;
+    min-height: 50vh;
+    padding: 30px;
     background-color: #F5F5F5;
 }
 .register-now button{
@@ -468,9 +469,9 @@ footer .col-social .img-parent img{
     width: 100%;
     cursor: pointer;
 }
-footer .col-copyright .copyright-content span span{
+/* footer .col-copyright .copyright-content span span{
     color: var(--orange-color);
-}
+} */
 footer .copyright-span{
     color: #efefef !important;
 }
@@ -494,6 +495,10 @@ footer .copyright-span{
     footer .col-copyright{
         padding-top:30px ;
         text-align: center;
+    }
+    footer .copyright-content{
+        display: flex;
+        justify-content: center;
     }
 }
 

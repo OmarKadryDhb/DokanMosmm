@@ -43,19 +43,20 @@
                 <a class="nav-link" data-i18n='contactUs'>Contact Us</a>
               </li>
             </ul>
-          </div>
-          <div class="navbar-btns d-flex justify-content-center align-items-center">
-            <input id="darkmode" type="checkbox" class="theme-checkbox  me-3">
-            <div class="lang-parent d-flex justify-content-center align-items-center bg-black me-2 pe-2 ps-2 rounded-2">
-              <i class="language-icon fa-solid fa-globe"></i>
-              <select class=" border-0 bg-black text-white pe-2 ps-2" name="" id='language-selector'>
-                <option value='en' data-i18n='english' >English</option>
-                <option value='ar' data-i18n='arabic'>Arabic</option>
-              </select>
+            <div class="navbar-btns d-flex justify-content-center align-items-center">
+              <input id="darkmode" type="checkbox" class="theme-checkbox  me-3">
+              <div class="lang-parent d-flex justify-content-center align-items-center bg-black me-2 pe-2 ps-2 rounded-2">
+                <i class="language-icon fa-solid fa-globe"></i>
+                <select class=" border-0 bg-black text-white pe-2 ps-2" name="" id='language-selector'>
+                  <option value='en' data-i18n='english' >English</option>
+                  <option value='ar' data-i18n='arabic'>Arabic</option>
+                </select>
+              </div>
+              <button class="login-btn me-2 pe-3 ps-3" data-i18n='login' id="login">Login</button>
+              <button class="register-btn ms-1 ps-2 pe-3 text-center" data-i18n='register' id="register">Register</button>
             </div>
-            <button class="login-btn me-2 pe-3 ps-3" data-i18n='login' id="login">Login</button>
-            <button class="register-btn ms-1 ps-2 pe-3 text-center" data-i18n='register' id="register">Register</button>
           </div>
+          
         </div>
       </nav>
       <!-- end section nav -->
@@ -364,7 +365,7 @@
             <div class="col-lg-4 col-md-6">
               <div class="card bg-white ps-2 pe-2">
                 <div class="card-img-parent">
-                  <img src="./images/mouse.png" alt="">
+                  <img src="./images/file.png" alt="">
                 </div>
                 <div class="inner-priced-flex flex-column justify-content-center align-items-center">
                   <h4 class='fw-bold text-center me-2' data-i18n="dMore"> Download more than one file at the same time</h4>
@@ -502,9 +503,9 @@
                 Register Now!
               </h2>
             </div>
-            <div class="register-now-content mb-4" data-i18n="registerNow_p">
-              <p>
-                Get the highest quality images at the best prices.
+            <div class="register-now-content w-75 m-auto mb-4">
+              <p class="text-center fw-bold m-0" data-i18n="registerNow_p1">Get the highest quality images at the best prices.</p>
+              <p class="text-center fw-bold" data-i18n="registerNow_p2">
                 Get the opportunity to download high-quality, royalty-free images, vectors and illustrations from any site we support for almost any application.
                 Whether you are looking for vectors or illustrations to enhance the look of your social platforms, your business portfolio, or for ads, websites, blogs, printables or billboards; We cover them all.
               </p>              
@@ -539,7 +540,7 @@
                       <img  class="dokkan-img" src="./images/Dokkan.png" alt="">
                     </div>
                 </div>
-                <div class="card-inner-content">
+                <div dir="ltr" class="card-inner-content" id="card-inner-content">
                   <p class="text-white" data-i18n="footer_p">
                     We offer you a very special service through which you can download all 
                     the programs you need and copy Windows, courses, and games completely free of charge.
@@ -573,7 +574,7 @@
             </div>
             <div class="col-md-2 col-sm-12 col-copyright mb-auto">
               <div class="copyright">
-                <div class="copyright-content" data-i18n="footer_copyright">
+                <div class="copyright-content text-white" id="copyright-content" data-i18n="footer_copyright">
                   <span class="copyright-span text-white">All rights reserved @2024 DokanMosmm</span>
                 </div>
               </div>

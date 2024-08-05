@@ -34,7 +34,8 @@ const translations = {
         able:"Able",
         disable:"Disabled",
         registerNow:"Register Now!",
-        registerNow_p:`Get the highest quality images at the best prices.
+        registerNow_p1:"Get the highest quality images at the best prices.",
+        registerNow_p2:`
                 Get the opportunity to download high-quality, royalty-free images, vectors and illustrations from any site we support for almost any application.
                 Whether you are looking for vectors or illustrations to enhance the look of your social platforms, your business portfolio, or for ads, websites, blogs, printables or billboards; We cover them all.`,
         registerNow_btn:"Create Account",
@@ -110,7 +111,10 @@ const translations = {
         able:"يعمل",
         disable:"معطل",
         registerNow:"سجل الان",
-        registerNow_p:"احصل على صور بأعلى جودة وبأفضل الأسعار.احصل على فرصة لتحميل صور عالية الجودة من أي موقع بندعمه لك وبدون حقوق ملكية، صور، وفيكتور ورسوم توضيحية لأي تطبيق تقريبًا.سواء كنت تبحث عن فيكتور أو رسوم توضيحية لتحسين مظهر منصاتك الاجتماعية أو ملف أعمالك أو لعمل الاعلانات والمواقع الإلكترونية والمدونات والأشياء القابلة للطباعة أو اللوحات الإعلانية ؛ فنحن نغطيهم جميعاً.",
+        registerNow_p1:"احصل على صور بأعلى جودة وبأفضل الأسعار.",
+        registerNow_p2:"احصل على فرصة لتحميل صور عالية الجودة من أي موقع بندعمه لك وبدون حقوق ملكية، صور، وفيكتور ورسوم توضيحية لأي تطبيق تقريبًا.سواء كنت تبحث عن فيكتور أو رسوم توضيحية لتحسين مظهر منصاتك الاجتماعية أو ملف أعمالك أو لعمل الاعلانات والمواقع الإلكترونية والمدونات والأشياء القابلة للطباعة أو اللوحات الإعلانية ؛ فنحن نغطيهم جميعاً.",
+        
+        
         registerNow_btn:"انشاء حساب",
         footer_p:`نقدم لكم خدمة مميزة جدًا يمكنك من خلالها تحميل كل ما تحتاج من البرامج ونسخ الويندوز والكورسات والالعاب بشكل مجانى تمامًا. كما نسعى الان لتقديم خدمة مشاهدة أفلام الكرتون والأفلام الوثائقية مباشرة وبدون تحميل . ولا تنسى أفضل خدمة لدينا لشراء أى كورس من يوديمى بـ 5 دولار فقط . `,
         footer_copyright:"جميع الحقوق محفوظه @2023 دكان مصمم",
