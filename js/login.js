@@ -12,6 +12,11 @@ var login_section = document.getElementById("login-section");
 var darkmode = document.getElementById("darkmode");
 var content = document.getElementsByTagName("body")[0];
 var navbar = document.getElementById("navbar");
+var navbar_logo = document.getElementById("navbar_logo");
+
+navbar_logo.addEventListener('click', function () {
+  open('index.html', '_self');
+})
 
 
 register.addEventListener("click", function () {

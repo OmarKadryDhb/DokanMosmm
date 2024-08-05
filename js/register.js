@@ -12,7 +12,12 @@ var login = document.getElementById("login");
 var register_section = document.getElementById("register-section");
 var content = document.getElementsByTagName("body")[0];
 var navbar = document.getElementById("navbar");
+var navbar_logo = document.getElementById("navbar_logo");
 var darkmode = document.getElementById("darkmode");
+
+navbar_logo.addEventListener('click', function () {
+    open('index.html', '_self');
+})
 
 
 register.addEventListener("click", function () {

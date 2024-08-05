@@ -70,8 +70,12 @@ $('.popularQuestions_icon_right').click( function (e) {
     arrow_down.css('display', 'none');
     arrow_up.css('display', 'block');
     
+    // console.log(slide);
+    
     if (slide.slideDown() ) {
-        cardParent.classList.add('opened')
+        console.log(cardParent);
+    
+        cardParent.addClass('opened')
         console.log('opened');
     }
     
@@ -89,7 +93,7 @@ $('.popularQuestions_icon_up').click( function (e) {
     arrow_up.css('display', 'none');
 
     if (slide.slideUp() ) {
-        cardParent.classList.remove('opened')
+        cardParent.removeClass('opened')
         console.log('opened');
     }
     

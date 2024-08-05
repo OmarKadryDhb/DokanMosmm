@@ -516,27 +516,38 @@ footer .copyright-span{
 }
 .popularQuestion .card-parent{
     width: 70%;
-    background-color: #F5F5F5 !important;
+    background-color: white !important;
     border-radius: 5px;
-    border: 2px solid #e0e0e0;
+    /* border: 2px solid #e0e0e0; */
     /* padding: 10px; */
-}.popularQuestion .card-parent.opened{
-    border: 2px solid var(--orange-color);
+}
+.popularQuestion .card-parent.opened{
+    border: 2px solid var(--orange-color) !important;
+}
+.popularQuestion .card-parent.opened .arrow-icon i{
+    background-color: var(--orange-color) !important;
+    color: white !important;
 }
 .popularQuestion .card-parent .card-inner h4{
     color: black ;
     font-weight: 650;
 }
 .popularQuestion .card-parent .card-inner p{ 
-    color: black !important;
+    color: rgb(136, 131, 131) !important;
     display: none;
+    padding-top: 5px;
+
+    /* font-weight: lighter; */
+}
+.popularQuestion .card-parent .arrow-icon {
+    margin-left: 30px !important
 }
 .popularQuestion .card-parent .arrow-icon i{
     cursor: pointer;
     transition: all 0.5s;
-    background-color: var(--orange-color);
+    background-color: white;
     padding: 15px;
-    color: white;
+    color:var(--orange-color);
     border-radius: 50%;
 }
 .card-parent .arrow-icon #popularQuestions_icon_up{
@@ -569,10 +580,10 @@ footer .copyright-span{
 }
 /* contact */
 .contact{
-    min-height: 100vh;
+    min-height: 90vh;
     padding-top: 120px;
     padding-bottom: 50px;
-    /* background-color: #f8f4f4; */
+    /* background-color: red; */
 }
 .mail-img .mail-img-parent{
     width: 200px; 
@@ -591,7 +602,7 @@ footer .copyright-span{
     border: 2px solid var(--orange-color);
 }
 .contact .send-btn{
-    background:#173659;
+    background:#173659  !important;
     font-size: 17px;
     color: white;
     border: none;
@@ -601,7 +612,7 @@ footer .copyright-span{
     transition: all 0.4s;
 }
 .contact .send-btn:hover{
-    background-color: var(--orange-color);
+    background-color: var(--orange-color) !important;
 }
 
 /* .contact .card-parent input:focus{
