@@ -127,9 +127,6 @@ languageSelector.addEventListener('change', (event) => {
 })
 
 
-document.addEventListener('DOMContentLoaded', () => {
-    setLanguage(localStorage.getItem('lang'));
-})
 const setLanguage = (language) =>{
     const elements = document.querySelectorAll('[data-i18n]');
     elements.forEach(element => {
@@ -176,6 +173,8 @@ const setLanguage = (language) =>{
 
     document.dir = language === 'ar' ? 'rtl' : 'ltr';
 }
+setLanguage(localStorage.getItem('lang'));
+
 
 $('#popularQuestions_link').click(function () {
     $('#popularQuestions').css('display', 'block');

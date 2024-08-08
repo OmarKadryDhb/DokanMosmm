@@ -9,7 +9,7 @@
     <title>DokanMosmm - دكان مصمم</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light"  id="navbar">
+    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light"  id="navbar">
         <div class="container">
           <div dir="ltr"  id="navbar_logo" class="navbar-logo d-flex justify-content-center align-items-center">
             <div class="mosmm-img-parent">
@@ -23,7 +23,50 @@
           <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-         
+          
+          <div class="navbar-btns d-flex justify-content-center align-items-center">
+            <input id="darkmode" type="checkbox" class="theme-checkbox  me-3">
+            <div class="lang-parent d-flex justify-content-center align-items-center bg-black me-2 pe-2 ps-2 rounded-2">
+              <i class="language-icon fa-solid fa-globe"></i>
+              <select class=" border-0 bg-black text-white pe-2 ps-2" name="" id='language-selector'>
+                <option value='en' data-i18n='english' >English</option>
+                <option value='ar' data-i18n='arabic'>Arabic</option>
+              </select>
+            </div>
+            <button class="login-btn me-2 pe-3 ps-3" data-i18n='login' id="login">Login</button>
+            <button class="register-btn ms-1 ps-2 pe-3 text-center" data-i18n='register' id="register">Register</button>
+          </div>
+        </div>
+      </nav> -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light"  id="navbar">
+        <div class="container">
+          <div dir="ltr"  id="navbar_logo" class="navbar-logo d-flex justify-content-center align-items-center">
+            <div class="mosmm-img-parent">
+              <img class="mosmm-img" src="./images/mosmm.png" alt="">
+            </div>
+            <div class="dokkan-img-parent">
+              <img  class="dokkan-img" src="./images/Dokkan.png" alt="">
+            </div>
+
+          </div>
+          <!-- <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end navbar-options" id="navbarSupportedContent">
+            
+            <div class="navbar-btns d-flex justify-content-center align-items-center">
+              <input id="darkmode" type="checkbox" class="theme-checkbox  me-3">
+              <div class="lang-parent d-flex justify-content-center align-items-center bg-black me-2 pe-2 ps-2 rounded-2">
+                <i class="language-icon fa-solid fa-globe"></i>
+                <select class=" border-0 bg-black text-white pe-2 ps-2" name="" id='language-selector'>
+                  <option value='en' data-i18n='english' >English</option>
+                  <option value='ar' data-i18n='arabic'>Arabic</option>
+                </select>
+              </div>
+              <button class="login-btn me-2 pe-3 ps-3" data-i18n='login' id="login">Login</button>
+              <button class="register-btn ms-1 ps-2 pe-3 text-center" data-i18n='register' id="register">Register</button>
+            </div>
+          </div> -->
           <div class="navbar-btns d-flex justify-content-center align-items-center">
             <input id="darkmode" type="checkbox" class="theme-checkbox  me-3">
             <div class="lang-parent d-flex justify-content-center align-items-center bg-black me-2 pe-2 ps-2 rounded-2">
@@ -45,7 +88,7 @@
             <div class="col-md-6 come-join d-flex justify-content-center align-items-center">
               <div class="content-left p-4">
                 <div class="joinus">
-                  <h3 class="fw-bold text-center text-white">
+                  <h3 class="fw-bold text-center text-white" data-i18n="join_us">
                     Come join us in Dokan Mosmm!
                   </h3>
                   <p class="text-center fw-light text-white pe-5 ps-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quia, ad vero magni odit asperiores ab doloribus facere quo labore corporis obcaecati enim pariatur impedit quidem. Nisi sint impedit est nam modi error, magni iure quibusdam perferendis maxime. Illum, neque.</p>
